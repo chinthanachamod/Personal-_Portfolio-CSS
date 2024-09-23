@@ -107,6 +107,29 @@
             margin-top: -10px;
         }
 
+        #Home main .social-link ul {
+            list-style-type: none;      /* Remove default bullet points */
+            padding: 0;
+            margin: 0;
+            display: flex;      /* Make the list horizontal */
+            justify-content: center;    /* Center the social links */
+            gap: 15px;      /* Space between social media icons */
+        }
+
+        #Home main .social-link ul li {
+            display: inline-block;      /* Make sure list items are inline */
+        }
+
+        #Home main .social-link ul li a {
+            text-decoration: none;
+            color: white;   /* Adjust this to match your design */
+            font-size: 40px;     /* Adjust icon size */
+            transition: transform 0.3s ease;     /* Smooth hover animation */
+        }
+
+        #Home main .social-link ul li a:hover {
+            transform: scale(1.2);      /* Slightly enlarge the icon on hover */
+        }
 
 
 
