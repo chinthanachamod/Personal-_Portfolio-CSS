@@ -26,7 +26,6 @@
             background-position: center;
             width: 100vw;
             height: 100vh;
-            position: fixed;
         }
 
         #Home .nav{
@@ -36,6 +35,7 @@
             justify-content: space-between;
             align-items: center;
             top: 0;
+            z-index: 2;
             width: 100%;
             padding: 10px 20px;
 
@@ -132,6 +132,33 @@
         }
 
 
+        /* ------- Button Styling ------- */
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff4500;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.1em;
+        }
+
+        button:hover {
+            background-color: #b6950f;
+        }
+
+        button a p {
+            margin: 0;
+        }
+
+
+
 
     </style>
 
@@ -222,31 +249,31 @@
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/chinthana.chamodbn?mibextid=ZbWKwL">      <!--fb link eka danna-->
-                            <img src="assets/images/icons8-facebook-50.png" alt="facebook" width="30" height="30">
+                            <img src="assets/images/Facebook.png" alt="facebook" width="40" height="40">
                         </a>
                     </li>
 
                     <li>
                         <a href="https://www.instagram.com/chinthana_chamod_bn/">      <!-- instr link eka danna-->
-                            <img src="assets/images/icons8-instagram-50.png" alt="instagram" width="30" height="30">
+                            <img src="assets/images/Instagram.png" alt="instagram" width="40" height="40">
                         </a>
                     </li>
 
                     <li>
                         <a href="www.whatsapp/chamod.com">      <!--whatsapp link eka danna-->
-                            <img src="assets/images/icons8-whatsapp-50.png" alt="whatsapp" width="30" height="30">
+                            <img src="assets/images/Whatsapp.png" alt="whatsapp" width="40" height="40">
                         </a>
                     </li>
 
                     <li>
                         <a href="https://www.linkedin.com/in/chinthana-chamod-2a133b323/">      <!--linkin link eka danna-->
-                            <img src="assets/images/icons8-linkedin-50.png" alt="linkin" width="30" height="30">
+                            <img src="assets/images/Linkedin.png" alt="linkin" width="40" height="40">
                         </a>
                     </li>
 
                     <li>
                         <a href="https://github.com/chinthanachamod">      <!--github link eka danna-->
-                            <img src="assets/images/icons8-github-50.png" alt="github" width="30" height="30">
+                            <img src="assets/images/GitHub.png" alt="github" width="40" height="40">
                         </a>
                     </li>
                 </ul>
@@ -276,12 +303,13 @@
 
 <!--------------------------------- About -------------------------------------------->
 
-<!--<section id="about">
-    <h2>about me</h2>
+<section id="about">
+   <h2>about me</h2>
 
     <div>
         <div>
-            <img src="assets/images/IMG_2551.jpg" alt=" About Me image " width="300" height="300">      &lt;!&ndash;About me eke image eka danna&ndash;&gt;
+            <img src="assets/images/IMG_2551.jpg" alt=" About Me image " width="300" height="300">     <!-- About me eke
+            image eka danna-->
         </div>
 
         <main>
@@ -306,7 +334,7 @@
                 Explore my work to see how I blend creativity with technical prowess to bring ideas to life.
             </p>
 
-            &lt;!&ndash;======================================================================================================&ndash;&gt;
+            <!--======================================================================================================-->
 
             <h3>Education & Experience</h3>
 
@@ -314,7 +342,7 @@
 
                 <h4>Education</h4>
 
-                <img src="assets/images/graduates-student-graduation-caps-thrown-600nw-1937758900-ezgif.com-webp-to-jpg-converter.jpg" alt=" About Me image " width="300" height="300">      &lt;!&ndash;Education eke image eka danna&ndash;&gt;
+                <img src="assets/images/graduates-student-graduation-caps-thrown-600nw-1937758900-ezgif.com-webp-to-jpg-converter.jpg" alt=" About Me image " width="300" height="300">      <!--Education eke image eka danna-->
 
                 <div>
                     <li>
@@ -343,7 +371,7 @@
 
                 <h4>Experience</h4>
 
-                <img src="assets/images/Work Experience.png" alt=" About Me image " width="300" height="300">      &lt;!&ndash;Experience eke image eka danna&ndash;&gt;
+                <img src="assets/images/Work Experience.png" alt=" About Me image " width="300" height="300">      <!--Experience eke image eka danna-->
 
                 <div>
                     <li>
@@ -353,7 +381,7 @@
 
             </div>
 
-            &lt;!&ndash;======================================================================================================&ndash;&gt;
+            <!--======================================================================================================-->
 
             <h3> Skills </h3>
 
@@ -382,7 +410,7 @@
                 </div>
             </div>
 
-            &lt;!&ndash;======================================================================================================&ndash;&gt;
+            <!--======================================================================================================-->
 
             <h3>Achievements</h3>
 
@@ -398,7 +426,7 @@
 
 </section>
 
-&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Project &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+<!--------------------------------- Project -------------------------------------------->
 
 <section id="project">
     <h2>Project</h2>
@@ -426,13 +454,13 @@
                         </button>
 
                         <button type="button">
-                            <a href="https://github.com/chinthanachamod/Animal-Hospital-&#45;&#45;Layered">
+                            <a href="https://github.com/chinthanachamod/Animal-Hospital---Layered">
                                 <p>Layered</p>
                             </a>
                         </button>
 
-                    &lt;!&ndash;<button>MVC</button>
-                    <button>Layered</button>&ndash;&gt;
+                    <!--<button>MVC</button>
+                    <button>Layered</button>-->
                 </span>
 
                 <br>
@@ -445,7 +473,7 @@
 
 </section>
 
-&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Service &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+<!--------------------------------- Service -------------------------------------------->
 
 <section id="service">
     <h2>Service</h2>
@@ -511,7 +539,7 @@
     </main>
 </section> <br>
 
-&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Gallery &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+<!--------------------------------- Gallery -------------------------------------------->
 
 <section id="gallery">
 
@@ -540,7 +568,7 @@
 
 </section>
 
-&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Contact &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+<!--------------------------------- Contact -------------------------------------------->
 
 <section id="contact">
     <h2>Contact</h2>
@@ -596,7 +624,7 @@
 
 <br><br>
 
-&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Footer &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+<!--------------------------------- Footer -------------------------------------------->
 
 <section>
 
