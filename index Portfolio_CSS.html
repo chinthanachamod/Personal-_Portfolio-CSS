@@ -226,21 +226,40 @@
             color: #d3d3d3;
         }
 
+        /*#abouttxt2 {
+            display: flex; !* Aligns the text in columns *!
+            justify-content: space-between; !* Ensures both columns are on opposite sides *!
+            padding: 20px; !* Adds space inside the border *!
+            border: 2px solid #ff6600; !* Surrounds the text with a border *!
+            border-radius: 10px; !* Rounds the border edges *!
+            margin-top: 6%; !* Adjusts space between h1 and the bordered text *!
+            background-color: #2c2c2c; !* Optional: Adds background color inside the border *!
+            color: #bdbdbd; !* Ensures the text color matches the design *!
+        }
+
+
+        #abouttxt2 .column {
+           !* flex: 1; !* Ensures both columns take equal width *!*!
+            width: 30%; !* Set each column to 40% of the container width *!
+            padding: 0 10px; !* Adds padding between the columns *!
+        }*/
+
         #abouttxt2 {
-            display: flex; /* Aligns the text in columns */
-            justify-content: space-between; /* Ensures both columns are on opposite sides */
-            padding: 20px; /* Adds space inside the border */
-            border: 2px solid #ff6600; /* Surrounds the text with a border */
-            border-radius: 10px; /* Rounds the border edges */
-            margin-top: 6%; /* Adjusts space between h1 and the bordered text */
-            background-color: #2c2c2c; /* Optional: Adds background color inside the border */
-            color: #bdbdbd; /* Ensures the text color matches the design */
+            display: flex;
+            justify-content: space-around; /* Brings columns closer together */
+            padding: 20px;
+            border: 3px solid #ff6600;
+            border-radius: 10px;
+            margin-top: 6%;
+            background-color: #2c2c2c;
+            color: #bdbdbd;
         }
 
         #abouttxt2 .column {
-            flex: 1; /* Ensures both columns take equal width */
-            padding: 0 10px; /* Adds padding between the columns */
+            flex: 0 0 35%; /* Reduce the column width to 35% */
+            padding: 0 5px; /* Keep reduced padding between columns */
         }
+
 
 
 
