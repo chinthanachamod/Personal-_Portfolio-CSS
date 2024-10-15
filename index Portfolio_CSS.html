@@ -316,6 +316,7 @@
             background-color: #1a1a1a; /* Dark background for the section */
             border-radius: 10px;
             margin-top: 150px;
+            margin-left: -41px;
         }
 
         /* Heading for Education & Experience */
@@ -328,6 +329,33 @@
         }
 
 
+        /* Container for the whole section */
+        .education-experience-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            margin-top: 50px;
+            color: #ffffff; /* White text for readability */
+        }
+
+        /* Heading styling */
+        .education-title,
+        .experience-title {
+            font-size: 40px;
+            color: #ff6600; /* Orange color */
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+
+
+
+
+
+
 
 
 
@@ -335,14 +363,6 @@
 
 
     </style>
-
-    <!--AOS-->
-    <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
-
-    <!--Animate.CSS-->
-    <!--<link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>-->
 
 </head>
 <body>
@@ -580,7 +600,7 @@
             <div id="education-experience">
                 <h3>Education & Experience</h3>
 
-                <div>
+                <!--<div>
                     <h4 class="education">Education</h4>
                     <img src="assets/images/graduates-student-graduation-caps-thrown-600nw-1937758900-ezgif.com-webp-to-jpg-converter.jpg" alt="About Me image" width="300" height="300">
 
@@ -602,7 +622,38 @@
                     <div>
                         <li>6 months Work experience as an Account assistant in Macksons Paints</li>
                     </div>
+                </div>-->
+
+                <div class="education-experience-container">
+                    <h4 class="education-title">Education</h4>
+                    <img src="assets/images/graduates-student-graduation-caps-thrown-600nw-1937758900-ezgif.com-webp-to-jpg-converter.jpg" alt="Graduation image" width="300" height="300">
+
+                    <div class="education-list">
+                        <ul>
+                            <li>Completed O/L’s (2015) - Methodist Collage, Moratuwa</li>
+                            <li>Completed A/L’s (2018) - Central Collage, Bandaragama</li>
+                            <li>Completed JLPT N5 (2022) - JLEA</li>
+                        </ul>
+                    </div>
+
+                    <div class="education-details">
+                        <h5>Institute of Software Engineering</h5>
+                        <p>Graduate Higher Diploma in Software Engineering (Ongoing: 2023/25)</p>
+                        <ul>
+                            <li>Gained comprehensive knowledge and skills in software engineering.</li>
+                        </ul>
+                    </div>
+
+                    <h4 class="experience-title">Experience</h4>
+                    <img src="assets/images/Work Experience.png" alt="Work experience image" width="300" height="300">
+
+                    <div class="experience-list">
+                        <ul>
+                            <li>6 months work experience as an Account Assistant in Macksons Paints</li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
 
 
