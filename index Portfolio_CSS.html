@@ -245,20 +245,22 @@
         }*/
 
         #abouttxt2 {
-            display: flex;
-            justify-content: space-around; /* Brings columns closer together */
-            padding: 20px;
-            border: 3px solid #ff6600;
-            border-radius: 10px;
-            margin-top: 6%;
-            background-color: #2c2c2c;
-            color: #bdbdbd;
+            display: flex; /* Align content in two columns */
+            justify-content: space-between; /* Space the columns evenly */
+            padding: 10px 15px; /* Adds space inside the border */
+            border: 2px solid #ff6600; /* Adds an orange border around the container */
+            border-radius: 10px; /* Rounds the border edges */
+            margin-top: 20px; /* Adds margin from the top */
+            background-color: #2c2c2c; /* Adds background color */
+            color: #bdbdbd; /* Sets text color */
+            max-width: 800px; /* Limit the overall width of the container */
+            margin-left: auto;
+            margin-right: auto; /* Center the container horizontally */
         }
 
-        #abouttxt2 .column {
-            flex: 0 0 35%; /* Reduce the column width to 35% */
-            padding: 0 5px; /* Keep reduced padding between columns */
-        }
+
+
+
 
 
 
@@ -525,12 +527,12 @@
             </p>-->
 
             <div id="abouttxt2">
-                <div class="column">
+                <div class="column1">
                     Name: H.M.C.Chamod Buddhi Nawalawatta <br>
                     Age: 24 yrs <br>
                     Nationality: Sri Lankan
                 </div>
-                <div class="column">
+                <div class="column2">
                     Occupation: Full-stack Developer <br>
                     Telephone No: +94 71 7500 753 <br>
                     E-mail: chinthanachamod50@gmail.com
