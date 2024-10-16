@@ -768,7 +768,7 @@
         /* Container for the project section */
         #project {
             margin-top: 100px !important;
-            padding: 40px;
+            padding: 85px;
             background-color: #1a1a1a;
             font-family: 'Roboto', sans-serif;
             border-radius: 10px;
@@ -782,13 +782,13 @@
 
 
         /* Title styling */
-        #project h2 {
+        #project div h2 {
             color: #ff6600;
             font-size: 48px;
             text-align: left;
             margin-bottom: 30px;
             position: absolute;
-            top: -3vh;
+            top: -4vh;
         }
 
         /* Main container using Flexbox */
@@ -800,9 +800,13 @@
 
         /* Image styling */
         #project main img {
-            border-radius: 20px; /* Rounded corners */
-            width: 280px;
-            height: 200px;
+            border-radius: 20px;
+            width: 305px;
+            height: 230px;
+            border: 4px solid #ff6600;
+            padding: 15px;
+            position: relative;
+            top: 6vh;
         }
 
         /* Project content container */
@@ -813,16 +817,50 @@
 
         /* Project title */
         #project main div h4 {
-            color: #ffffff; /* White text */
-            font-size: 28px;
+            color: #ffffff;
+            font-size: 34px;
             margin-bottom: 10px;
+            position: absolute;
+            top: 8vh;
+            left: 42vw;
         }
 
         /* Project subtitle */
         #project main div h5 {
-            color: #cccccc; /* Light gray text */
-            font-size: 18px;
+            color: #cccccc;
+            font-size: 22px;
             margin-bottom: 20px;
+            position: absolute;
+            left: 42vw;
+            top: 20vh;
+        }
+
+        #projrctCont {
+            font-size: 17px;
+            color: #ffffff;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            top: 31vh;
+            left: 42vw;
+        }
+
+        /* Container for the Github section */
+        #projectGit {
+            margin-top: 20px;
+        }
+
+        /* Styling for the "Github:" label */
+        #projectGit p {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+            position: absolute;
+            top: 40vh;
+            left: 42vw;
         }
 
         /* Project description */
@@ -834,44 +872,69 @@
             margin-bottom: 20px;
         }
 
-        /* Buttons for the links */
-        #project main div ul span {
-            display: inline-block;
-            margin-top: 10px;
+        /* Styling for the button container */
+        #btn {
+            display: flex;
+            gap: 26px;
+            margin-top: 20px;
+            position: absolute;
+            top: 35vh;
+            left: 50vw;
         }
 
-        #project main div ul button {
-            background-color: #ff6600;
-            color: #ffffff;
-            border: none;
-            padding: 10px 20px;
-            margin-right: 10px;
+        /* Styling for the buttons */
+        #btn button {
+            background-color: #ff6600; /* Orange background */
+            border: none; /* Remove default button border */
+            border-radius: 10px; /* Rounded corners */
+            padding: 10px 20px; /* Button padding */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Text inside the button */
+        #btn button p {
+            color: #ffffff; /* White text */
             font-size: 16px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin: 0; /* Remove default margin for paragraph */
+            font-weight: bold;
         }
 
-        #project main div ul button:hover {
+        /* Hover effect for the buttons */
+        #btn button:hover {
             background-color: #e65c00; /* Darker orange on hover */
             transform: translateY(-3px); /* Slight lift on hover */
         }
 
-        /* Anchor tag inside button */
-        #project main div ul button a {
-            color: inherit;
-            text-decoration: none;
+        /* Styling for the links inside the buttons */
+        #btn button a {
+            color: inherit; /* Inherit the text color (white) */
+            text-decoration: none; /* Remove underline from link */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        /* Github section spacing */
-        #project main div ul span {
-            margin-top: 10px;
-            display: inline-flex;
+        /* Styling for the list container */
+        #lstCont {
+            font-size: 16px;
+            color: #ffffff;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
+            padding: 10px 0;
+            position: absolute;
+            top: 47vh;
+            left: 41vw;
         }
 
-        #project main div ul span button p {
-            margin: 0;
-        }
+
+
 
 
 
@@ -1256,25 +1319,32 @@
 <!--------------------------------- Project -------------------------------------------->
 
 <section id="project">
-    <h2>Project</h2>
+    <div>
+        <h2>Project</h2>
 
-    <main>
-        <img src="assets/images/project.png" alt=" Achievement 3 " width="280" height="200">
+        <main>
+            <img src="assets/images/project.png" alt=" Achievement 3 " width="280" height="200">
 
-        <div>
             <div>
-                <h4>Animal Empire</h4>
-                <h5>Animal Hospital Management Sysytem</h5>
-            </div>
+                <div>
+                    <h4>Animal Empire</h4>
+                    <h5>Animal Hospital Management Sysytem</h5>
+                </div>
 
-            <ul>
-                First Semester Final Projrct
-                Used architecture - MVC & Layered Architecture <br>
+                <ul>
+                    <p id="projrctCont">
+                        First Semester Final Projrct
+                        Used architecture - MVC & Layered Architecture
+                    </p>
 
-                Github :
 
-                <span>
-                    <button type="button">
+                    <div id="projectGit">
+                        <p>Github :</p>
+                    </div>
+
+
+                    <span id="btn">
+                        <button type="button">
                             <a href="https://github.com/chinthanachamod/Animal_Hospital">
                                 <p>MVC</p>
                             </a>
@@ -1285,18 +1355,18 @@
                                 <p>Layered</p>
                             </a>
                         </button>
+                    </span>
 
-                    <!--<button>MVC</button>
-                    <button>Layered</button>-->
-                </span>
 
-                <br>
+                    <div id="lstCont">
+                        At Institute of Software Engineering(IJSE)
+                    </div>
 
-                At Institute of Software Engineering(IJSE)
 
-            </ul>
-        </div>
-    </main>
+                </ul>
+            </div>
+        </main>
+    </div>
 
 </section>
 
