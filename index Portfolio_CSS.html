@@ -563,30 +563,20 @@
 
 
         .circle1 {
-            width: 208px;
+            width: 200px;
             aspect-ratio: 1 / 1;
             border-radius: 100%;
             background: #1a1a1a;
             position: absolute;
             right: 0;
-            left: -56vw;
+            left: -57vw;
             top: 177px;
             bottom: 0;
             margin: auto;
             /* animation: rotate 2s infinite linear; */
         }
 
-        .circle1 h1 {
-           /* width: max-content;
-            height: max-content;
-            color: #ffffff;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;*/
-
+        .circle1 h2 {
             width: max-content;
             height: max-content;
             color: #ffffff;
@@ -596,24 +586,22 @@
             top: 0;
             bottom: 0;
             margin: auto;
-            font-size: 24px;
+            font-size: 50px;
         }
 
-        .circle1::before {     /*content start eka create krnn pluwn*/
+        .circle1::before {
             content: "";
-            border: 10px solid dimgrey;
+            border: 20px solid dimgrey; /* Increased border thickness */
             border-radius: 100%;
-            border-top-color: #ff6600;
+            border-top-color: #ff6600; /* Orange top border */
             position: absolute;
             right: 0;
             left: 0;
             top: 0;
             bottom: 0;
             margin: auto;
-
-            /*transition-duration: 2s;*/            /*before eka athule danna ba...mokada meka thule thyna transition
-        reset wenawa...eka nisa meka ".Inner_Circle:hover::before" athule danawa*/
         }
+
 
         .circle1:hover::before {
             transform: rotate(360deg);
@@ -959,7 +947,7 @@
                     <div class="extra-skills">
                         <div>
                             <div class="circle1">
-                                <h1>75%</h1>
+                                <h2>75%</h2>
                             </div>
                             <span>Database Management</span>
                         </div>
