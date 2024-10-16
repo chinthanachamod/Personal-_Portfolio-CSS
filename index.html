@@ -768,6 +768,7 @@
         /* Container for the project section */
         #project {
             margin-top: 100px !important;
+            margin-bottom: 100px ! important;
             padding: 85px;
             background-color: #1a1a1a;
             font-family: 'Roboto', sans-serif;
@@ -933,9 +934,66 @@
             left: 41vw;
         }
 
+/*----------------------------------- Assignment ----------------------------------------*/
 
+        /* Main container for the assignment section */
+        #assignment {
+            padding: 20px;
+            background-color: #f5f5f5; /* Light background */
+            font-family: 'Roboto', sans-serif;
+        }
 
+        /* Styling the main heading */
+        #assignment .topics {
+            font-size: 36px;
+            text-align: center;
+            color: #ff6600; /* Orange color for the heading */
+            margin-bottom: 40px;
+        }
 
+        /* Grid layout for the cards */
+        #assignment section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 20px; /* Space between the cards */
+            max-width: 1200px;
+            margin: 0 auto; /* Center the grid */
+        }
+
+        /* Card container */
+        .card {
+            background-color: #1a1a1a; /* Dark background for the card */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+        }
+
+        /* Hover effect for cards */
+        .card:hover {
+            transform: translateY(-10px); /* Lift the card on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        /* Content inside the card */
+        .project-content h2 {
+            font-size: 22px;
+            color: #ffffff; /* White text inside the card */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Links for assignments */
+        .project-content h2 a {
+            color: #ff6600; /* Orange color for links */
+            text-decoration: none; /* Remove underline from links */
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        .project-content h2 a:hover {
+            color: #ffffff; /* White color on hover */
+        }
 
 
 
@@ -1369,6 +1427,44 @@
     </div>
 
 </section>
+
+<!--------------------------------- Assignment -------------------------------------------->
+
+<main id="assignment" class="assignment">
+    <h1 class="topics">Assignment</h1>
+    <section>
+        <div class="card">
+            <div class="project-content">
+                <h2><a href="assignment/assignment01/index.html">Assignment-01</a></h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="project-content">
+                <h2><a href="https://github.com/nimsimethusala/My-Personal-Portfolio.git">Assignment-02</a></h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="project-content">
+                <h2><a href="assignment/assignment03/index.html">Assignment-03</a></h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="project-content">
+                <h2><a href="assignment/assignment04/index.html">Assignment-04</a></h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="project-content">
+                <h2><a href="https://github.com/nimsimethusala/My-Personal-Portfolio.git">Assignment-05</a></h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="project-content">
+                <h2><a href="assignment/assignment06/index.html">Assignment-06</a></h2>
+            </div>
+        </div>
+    </section>
+</main>
 
 <!--------------------------------- Service -------------------------------------------->
 
