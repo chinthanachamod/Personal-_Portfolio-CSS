@@ -481,6 +481,60 @@
         }
 
 
+        /* Container for progress bars */
+        .progress-bars {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .progress-bars p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        /* Base for the progress bar (gray background) */
+        .progress-bars p span {
+            display: inline-block;
+            width: 35%;
+            height: 8px;
+            background-color: #cccccc;
+            border-radius: 10px;
+            margin-left: 23px;
+            vertical-align: middle;
+            position: relative;
+        }
+
+
+        /* Filled part of the progress bar (orange) */
+        .progress-bars p span.fill {
+            background-color: #ff6600;
+            height: 100%;
+            display: inline-block;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left: -24px;
+        }
+
+        /* Example of different progress levels */
+        .progress-java .fill {
+            width: 75%;
+        }
+
+        .progress-html .fill {
+            width: 80%; /* HTML is at 75% */
+        }
+
+        .progress-figma .fill {
+            width: 85%; /* Figma is at 80% */
+        }
+
+        .progress-sql .fill {
+            width: 80%; /* SQL is at 80% */
+        }
+
+
 
 
     </style>
