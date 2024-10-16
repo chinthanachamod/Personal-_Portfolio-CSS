@@ -536,19 +536,20 @@
 
 
 
-        /* Container for logos */
         .logos {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 columns grid */
-            gap: 63px; /* Space between the logos */
-            justify-items: center; /* Center items horizontally */
-            align-items: center; /* Center items vertically */
-            margin-top: 20px;
-            width: 70%; /* Adjusted width for the grid */
-            max-width: 600px; /* Optional: Limit the maximum width */
+            grid-template-columns: repeat(2, 1fr);  /* 2 columns grid */
+            gap: 63px;  /* Space between the logos */
+            justify-items: center;  /* Center items horizontally */
+            align-items: center;    /* Center items vertically */
+            width: 70%;  /* Adjusted width for the grid */
+            max-width: 600px;   /* Optional: Limit the maximum width */
             margin-left: auto;
             margin-right: auto; /* Center the grid horizontally */
+            transform: translate(49%, 50%); /* Shift the grid to the right by 20% and down */
         }
+
+
 
         /* Individual logo images */
         .logos img {
