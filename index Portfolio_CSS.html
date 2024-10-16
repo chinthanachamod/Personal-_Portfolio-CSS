@@ -608,6 +608,68 @@
             transition-duration: 2s;
         }
 
+        #c1 span {
+            display: block;
+            font-weight: bold;
+            position: absolute;
+            bottom: -30px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            top: 45vh;
+            left: 62px;
+        }
+
+
+        /*----------------------Circle1------------------------*/
+
+        .circle2 {
+            width: 200px;
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+            background: #1a1a1a;
+            position: absolute;
+            right: 0;
+            left: -23vw;
+            top: 177px;
+            bottom: 0;
+            margin: auto;
+            /* animation: rotate 2s infinite linear; */
+        }
+
+        .circle2 h2 {
+            width: max-content;
+            height: max-content;
+            color: #ffffff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 50px;
+        }
+
+        .circle2::before {
+            content: "";
+            border: 20px solid dimgrey; /* Increased border thickness */
+            border-radius: 100%;
+            border-top-color: #ff6600; /* Orange top border */
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+
+        .circle2:hover::before {
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+
+
 
 
 
@@ -945,17 +1007,21 @@
                     </div>
 
                     <div class="extra-skills">
-                        <div>
+
+                        <div id="c1">
                             <div class="circle1">
                                 <h2>75%</h2>
                             </div>
                             <span>Database Management</span>
                         </div>
 
-                        <div class="circle2">
-                            70%
+                        <div id="c2">
+                            <div class="circle2">
+                                <h2>70%</h2>
+                            </div>
                             <span>Problem Solving</span>
                         </div>
+
                     </div>
                 </div>
 
