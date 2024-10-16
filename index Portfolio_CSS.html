@@ -562,6 +562,66 @@
 
 
 
+        .circle1 {
+            width: 208px;
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+            background: #1a1a1a;
+            position: absolute;
+            right: 0;
+            left: -56vw;
+            top: 177px;
+            bottom: 0;
+            margin: auto;
+            /* animation: rotate 2s infinite linear; */
+        }
+
+        .circle1 h1 {
+           /* width: max-content;
+            height: max-content;
+            color: #ffffff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;*/
+
+            width: max-content;
+            height: max-content;
+            color: #ffffff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 24px;
+        }
+
+        .circle1::before {     /*content start eka create krnn pluwn*/
+            content: "";
+            border: 10px solid dimgrey;
+            border-radius: 100%;
+            border-top-color: #ff6600;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            /*transition-duration: 2s;*/            /*before eka athule danna ba...mokada meka thule thyna transition
+        reset wenawa...eka nisa meka ".Inner_Circle:hover::before" athule danawa*/
+        }
+
+        .circle1:hover::before {
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+
+
+
 
     </style>
 
@@ -897,11 +957,14 @@
                     </div>
 
                     <div class="extra-skills">
-                        <div class="circle">
-                            75%
+                        <div>
+                            <div class="circle1">
+                                <h1>75%</h1>
+                            </div>
                             <span>Database Management</span>
                         </div>
-                        <div class="circle">
+
+                        <div class="circle2">
                             70%
                             <span>Problem Solving</span>
                         </div>
