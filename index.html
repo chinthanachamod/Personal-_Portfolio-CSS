@@ -1060,6 +1060,27 @@
         }
 
 
+        /* Container for the service offer title */
+        .serviceOfferTitle h4 {
+            font-size: 36px; /* Adjust size of the title */
+            color: #ffffff; /* White text color */
+            text-align: left; /* Align text to the left */
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 20px; /* Add spacing below the title */
+            letter-spacing: 1px; /* Add a little space between letters */
+        }
+
+        /* Custom underline */
+        .serviceOfferTitle h4::after {
+            content: "";
+            display: block;
+            width: 39%; /* Full width underline */
+            height: 2px; /* Thickness of the line */
+            background-color: #ccc; /* Light grey underline */
+            margin-top: 10px; /* Space between text and underline */
+        }
+
 
 
 
@@ -1556,7 +1577,10 @@
         </div>
 
         <div>
-            <h4>WHAT TO OFFER</h4>
+            <div class="serviceOfferTitle">
+                <h4>WHAT TO OFFER</h4>
+            </div>
+
             <ul>
                 <li>
                     Business Consultation
