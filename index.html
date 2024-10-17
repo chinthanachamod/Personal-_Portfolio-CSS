@@ -105,27 +105,41 @@
             margin-bottom: 20px;
             text-align: left; /* Aligns the text to the left */
             padding-left: 80px; /* Adds 80px spacing from the left */
+            position: relative;
+            top: -6vh;
         }
 
 
-        #home p {
+        .job-title .txt1 {
             font-size: 18px;
             color: #ffffff;
             max-width: 700px;
             margin: 20px auto;
             text-align: left; /* Aligns the text to the left */
+            margin-left: 0;
+            margin-top: -19px;
             padding-left: 80px; /* Adds 80px spacing from the left */
+            padding-left: 80px;
+            position: relative;
+            top: -6vh;
         }
 
 
-        #home main .txt {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #ffffff;
-            margin-left: 0; /* Push element 0px from the left */
-            text-align: left;
-        }
 
+        .homeContent .txt2 {
+            font-size: 22px; /* Larger text size for emphasis */
+            line-height: 1.8; /* Provides ample spacing between lines */
+            color: #ffffff; /* White color for text */
+            text-align: left; /* left the text within the container */
+            width: 48%; /* Set width to control line breaks and center content */
+            margin: 0 auto; /* Centers the entire text block */
+            font-weight: 400; /* Slightly bolder text for good visibility */
+            font-family: Arial, sans-serif; /* Simple, readable font */
+            margin-left: 78px;
+            font-style: italic;
+            position: relative;
+            top: -6vh;
+        }
 
 
         .my-img {
@@ -142,7 +156,10 @@
             list-style: none;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 52px;
+            margin-left: -73vw;
+            position: relative;
+            top: -6vh;
         }
 
         .social-link ul li {
@@ -162,27 +179,48 @@
         }
 
         button {
-            background-color: #ff6600;
-            color: #ffffff;
+            background: linear-gradient(to right, #ff6600, #444444); /* Orange to dark gradient */
             border: none;
-            padding: 12px 24px;
-            margin-top: 30px;
-            font-size: 30px;
+            border-radius: 30px; /* Rounded corners */
+            padding: 16px 32px; /* Padding to create a larger button */
             cursor: pointer;
-            border-radius: 30px;
-            transition: background-color 0.3s;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+            font-family: 'Orbitron', sans-serif; /* Font style to match the image */
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+            margin-left: -74vw;
+            position: relative;
+            top: -18vh;
         }
 
-        /*Add hover effect to button with background color change*/
+
         button:hover {
-            background-color: #e65c00;
+            transform: scale(1.05); /* Slightly larger on hover for emphasis */
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Increase shadow for hover effect */
         }
 
-        /* Remove text decoration and set font color for button links */
         button a {
             text-decoration: none;
-            color: #ffffff;
+            color: #ffffff; /* White text for readability */
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
         }
+
+        button p {
+            margin: 0; /* Remove any default margin from paragraph */
+        }
+
+        button a:hover {
+            color: #f1f1f1; /* Slightly change the color of text on hover */
+        }
+
+        .animate__animated.animate__rubberBand {
+            display: inline-block;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+
 
 
         /*//////////////////////////////////////////// About Section ///////////////////////////////////////////////////////////*/
@@ -1818,14 +1856,20 @@
             <h1>Hello, It's Me </h1>
             <h2>Chamod Nawalawatta</h2>
 
-            <p class="job-title">
-                Full-stack Developer based in Sri Lanka.
-            </p>
-            <p class="txt">
-                "Crafting Digital Excellence, One Line of Code at a Time.
-                Transforming ideas into impactfull digital solutions with
-                innovative design and cutting-edge technology."
-            </p>
+            <div class="job-title">
+                <p class="txt1">
+                    Full-stack Developer based in Sri Lanka.
+                </p>
+            </div>
+
+            <div class="homeContent">
+                <p class="txt2">
+                    "Crafting Digital Excellence, One Line of Code at a Time.
+                    Transforming ideas into impactfull digital solutions with
+                    innovative design and cutting-edge technology."
+                </p>
+            </div>
+
 
 
             <div class="social-link">
