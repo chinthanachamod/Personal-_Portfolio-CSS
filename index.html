@@ -1650,6 +1650,7 @@
  /*--------------------------------- Footer --------------------------------------------*/
 
 
+
         .footer {
             background-color: #121212;
             padding: 40px 20px;
@@ -1684,12 +1685,6 @@
         }
 
 
-        .footerVerticalLine {
-            border-right: 1px solid #444; /* Vertical line between sections */
-            height: auto;
-            margin: 0 20px; /* Space on either side of the vertical line */
-        }
-
         .footer-content > div {
             flex: 1;
             margin: 20px;
@@ -1697,7 +1692,7 @@
         }
 
         .quote {
-            max-width: 350px;
+            max-width: 400px;
         }
 
         .quote p {
@@ -1714,8 +1709,18 @@
             margin-bottom: 10px;
         }
 
-        .links, .services {
-            margin-left: 20px;
+        .links {
+            padding-right: 20px;
+        }
+
+        .footerVerticalLine {
+            border-right: 1px solid #444; /* Vertical line between sections */
+            height: auto;
+            margin: 0 20px; /* Space on either side of the vertical line */
+        }
+
+        .services {
+            padding-left: 20px;
         }
 
         .links h3, .services h3, .contact-info h3 {
@@ -1751,7 +1756,7 @@
             max-width: 300px;
         }
 
-        .contact-info .name-logo {
+        .contact-info .footerBrandName {
             margin-bottom: 15px;
         }
 
@@ -1783,10 +1788,15 @@
             font-weight: bold;
         }
 
-        /* Divider styling */
-        .footer .divider {
-            border-top: 1px solid #444;
-            margin: 20px 0;
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-content > div {
+                margin: 10px 0;
+            }
         }
 
 
@@ -2649,8 +2659,9 @@
             </ul>
         </div>
         <div class="contact-info">
-            <div>
-                <img class="name-logo" src="assets/images/Brand name img.png" alt="brand name img" width="210" height="40">
+            <div class="footerBrandName">
+                <img class="footerName-logo" src="assets/images/Brand name img.png" alt="brand name img" width="210"
+                     height="40">
             </div>
             <span>
                 <img src="assets/images/Location - Footer.png" alt="location" width="25" height="25">
