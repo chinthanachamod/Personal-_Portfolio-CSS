@@ -1154,7 +1154,27 @@
             top: 8vh;
         }
 
+        /* Individual stat boxes */
+        .statusBar div {
+            text-align: center; /* Center the text */
+            color: #ffffff; /* White text color */
+            font-size: 22px; /* Adjust font size */
+            font-weight: bold; /* Make numbers bold */
+            line-height: 1.5; /* Adjust line height for spacing */
+            padding: 10px 20px; /* Padding inside the boxes */
+        }
 
+        /* Styling for numbers */
+        .statusBar div:first-child {
+            font-size: 31px;
+            margin-bottom: 10px;
+        }
+
+        /* Optional hover effect */
+        .statusBar div:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            transition: all 0.3s ease-in-out;
+        }
 
 
     </style>
