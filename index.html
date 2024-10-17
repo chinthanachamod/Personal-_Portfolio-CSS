@@ -1314,7 +1314,32 @@
             transition: color 0.3s ease-in-out;
         }
 
+/*--------------------Images-----------------------*/
 
+        .galleryImgs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin-top: 60px; /* Increased top margin to move the section down */
+        }
+
+        .galleryImgs img {
+            /*width: 300px;
+            height: 300px;*/
+            border: 2px solid #e65c00;
+            border-radius: 20px;
+            box-shadow: 4px 7px 7px 0px #e65c00;
+            cursor: pointer;
+            margin: 10px;
+            transition: 400ms;
+        }
+
+        .galleryImgs img:hover {
+            filter: grayscale(1);
+            transform: scale(1.05);
+        }
 
 
 
@@ -1911,17 +1936,18 @@
         </div>
 
 
-        <div>
+        <div class="galleryImgs">
             <img src="assets/images/IMG-20230919-WA0045.jpg" alt=" My Work image " width="300" height="300">
             <img src="assets/images/IMG_2578.jpg" alt=" My Work image " width="300" height="300">
             <img src="assets/images/FB_IMG_1710649277994.jpg" alt=" My Work image " width="300" height="300">
             <img src="assets/images/IMG_20230630_002633.jpg" alt=" My Work image " width="300" height="300">
             <img src="assets/images/WhatsApp Image 2024-07-26 at 14.34.41_352cfa36.jpg" alt=" My Work image " width="300" height="300">
-            <img src="assets/images/IMG_2622.jpg" alt=" My Work image " width="300" height="300">
+            <img src="assets/images/IMG_2622.jpg" alt=" My Work image " width="400" height="300">
             <img src="assets/images/WhatsApp Image 2024-07-26 at 14.34.34_b399b2f6.jpg" alt=" My Work image " width="300" height="300">
-            <img src="assets/images/IMG-20240219-WA0075.jpg" alt=" My Work image " width="300" height="300">
-            <img src="assets/images/IMG-20231001-WA0257.jpg" alt=" My Work image " width="300" height="300">
+            <img src="assets/images/IMG-20240219-WA0075.jpg" alt=" My Work image " width="400" height="300">
+            <img src="assets/images/IMG-20231001-WA0257.jpg" alt=" My Work image " width="400" height="300">
         </div>
+
     </main>
 
 </section>
