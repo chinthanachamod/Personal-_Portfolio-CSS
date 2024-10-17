@@ -1081,10 +1081,35 @@
             margin-top: 10px; /* Space between text and underline */
         }
 
-        /*-----------------------------------------------------------------------------------*/
+        /*--------------------------------------- Services --------------------------------------------*/
 
 
+        /* Container for service cards */
+        .serviceCard {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            margin: 40px 0;
+            width: 100%;
+        }
 
+        /* Individual service card styling */
+        .serviceCard li {
+            background: linear-gradient(145deg, #7b401b, #2f1b0e); /* Gradient background for the cards */
+            color: #ffffff; /* White text */
+            border-radius: 20px; /* Rounded corners */
+            width: 15%; /* Adjust card width */
+            padding: 30px 20px; /* Padding inside the card */
+            text-align: center; /* Center text inside the card */
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
 
 
