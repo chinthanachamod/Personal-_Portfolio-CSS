@@ -1136,6 +1136,25 @@
 
 
 
+        /*----------------------------------------------------------------------*/
+
+        /* Container for the stats */
+
+        .statusBar {
+            display: flex;
+            justify-content: space-around; /* Spread items evenly */
+            align-items: center; /* Vertically center items */
+            background: linear-gradient(145deg, #b34c0c, #5b2705); /* Gradient background */
+            padding: 10px 20px; /* Reduced top/bottom padding to lower the height */
+            border-radius: 30px; /* Rounded corners */
+            width: 92%; /* Adjust width */
+            margin: 60px auto; /* Increased top margin to move down */
+            height: 95px; /* Set a fixed height to control the size */
+            position: relative;
+            top: 8vh;
+        }
+
+
 
 
     </style>
@@ -1676,18 +1695,22 @@
 
         </div>
 
-        <span>
+        <span class="statusBar">
             <div>
-                1+ Awards
+                1+ <br>
+                Awards
             </div>
             <div>
-                1+ Yrs of Experience
+                1+ <br>
+                Yrs of Experience
             </div>
             <div>
-                5+ Projects
+                5+ <br>
+                Projects
             </div>
             <div>
-                20+ Happy Clients
+                20+ <br>
+                Happy Clients
             </div>
         </span>
 
