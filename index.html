@@ -1285,30 +1285,36 @@
 
         /* Welcome to my Gallery */
         .welcomeGal {
-            text-align: center;
+            text-align: left; /* Align text to the left */
+            margin-top: 40px; /* Move the entire section down */
             margin-bottom: 40px; /* Space below the welcome text */
+            padding-left: 20px; /* Optional: Add some padding from the left */
         }
 
         .welcomeGal p {
-            font-size: 36px;
+            font-size: 38px;
             color: #ffffff;
-            display: inline-block;
             font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            font-weight: bold;
         }
 
-        .welcomeGal span h2 {
-            display: inline; /* Align the h2 within the sentence */
+        .welcomeGal .highlighted-text {
             color: #ff6600; /* Orange for 'Gallery' */
-            font-size: 40px;
+            font-size: 56px;
             font-weight: bold;
             margin-left: 10px;
+            display: inline; /* Keep it inline with the rest of the text */
         }
 
+
         /* Optional: Add hover effect */
-        .welcomeGal span h2:hover {
+        .welcomeGal .highlighted-text:hover {
             color: #e65c00; /* Darker shade of orange on hover */
             transition: color 0.3s ease-in-out;
         }
+
+
 
 
 
