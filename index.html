@@ -9,1816 +9,69 @@
     <link rel="icon" type="image/x-icon" href="assest/logo.png">
     <title>Portfolio_CSS</title>
     <link rel="stylesheet" href="assets/normalize.css">
+
     <link rel="stylesheet" href="assets/style.css">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <style>
-
-        * {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        body {
-            background-color: #1c1c1c;
-            color: #e0e0e0;
-            font-size: 16px;
-            line-height: 1.8;
-        }
-
-        /*section {
-            padding: 100px 0;
-        }*/
-
-
-        /* NavBar */
-        .nav {
-            background-color: #333;
-            padding: 20px 50px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            right: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: flex-end; /* Align items to the right */
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .nav-items {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end; /* Align navigation items to the right */
-        }
-
-        .nav-items li {
-            margin-left: 30px;
-        }
-
-        .nav-items li a {
-            color: #e0e0e0;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 8px;
-            transition: color 0.3s, background-color 0.3s;
-        }
-
-        .nav-items li a:hover {
-            color: #fff;
-            background-color: #ff6600;
-            border-radius: 5px;
-        }
-
-        .name-logo {
-            display: block;
-            position: absolute;
-            left: 158px;
-            top: 27px;
-        }
-
-
-        /* Home Section */
-
-        #home {
-            background-color: #1c1c1c;
-            background-image: url(assets/images/desktop-wallpaper-portfolio.jpg); /* Add your image URL here */
+        .home-about{
+            background: url(assets/images/desktop-wallpaper-portfolio.jpg);
+            background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover; /* Ensures the image covers the entire section */
-            text-align: center;
-            padding-top: 120px;
+            background-attachment: fixed;
         }
-
-        #home h1 {
-            font-size: 40px;
-            font-weight: 700;
-            color: #ff6600;
-            margin-bottom: 10px;
-            text-align: left; /* Aligns the text to the left */
-            padding-left: 80px; /* Adds 20px spacing from the left */
-        }
-
-        #home h2 {
-            font-size: 60px;
-            color: #e0e0e0;
-            margin-bottom: 20px;
-            text-align: left; /* Aligns the text to the left */
-            padding-left: 80px; /* Adds 80px spacing from the left */
-            position: relative;
-            top: -6vh;
-        }
-
-
-        .job-title .txt1 {
-            font-size: 18px;
-            color: #ffffff;
-            max-width: 700px;
-            margin: 20px auto;
-            text-align: left; /* Aligns the text to the left */
-            margin-left: 0;
-            margin-top: -19px;
-            padding-left: 80px; /* Adds 80px spacing from the left */
-            padding-left: 80px;
-            position: relative;
-            top: -6vh;
-        }
-
-
-
-        .homeContent .txt2 {
-            font-size: 22px; /* Larger text size for emphasis */
-            line-height: 1.8; /* Provides ample spacing between lines */
-            color: #ffffff; /* White color for text */
-            text-align: left; /* left the text within the container */
-            width: 48%; /* Set width to control line breaks and center content */
-            margin: 0 auto; /* Centers the entire text block */
-            font-weight: 400; /* Slightly bolder text for good visibility */
-            font-family: Arial, sans-serif; /* Simple, readable font */
-            margin-left: 78px;
-            font-style: italic;
-            position: relative;
-            top: -6vh;
-        }
-
-
-        .my-img {
-            margin-left: 70%;
-            margin-top: 45px;
-            border-radius: 50%;
-            width: 300px;
-            height: 300px;
-            position: absolute;
-            /*box-shadow: 0px 5px 15px rgba(255, 102, 0, 0.4); !* Added box-shadow *!*/
-        }
-
-        .social-link ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-top: 52px;
-            margin-left: -73vw;
-            position: relative;
-            top: -6vh;
-        }
-
-        .social-link ul li {
-            margin: 0 10px;
-        }
-
-
-        .social-link ul li img {
-            width: 40px;
-            height: 40px;
-            transition: transform 0.3s;
-        }
-
-        /*Add hover scale effect to social media icons*/
-        .social-link ul li img:hover {
-            transform: scale(1.1);
-        }
-
-        button {
-            background: linear-gradient(to right, #ff6600, #444444); /* Orange to dark gradient */
-            border: none;
-            border-radius: 30px; /* Rounded corners */
-            padding: 16px 32px; /* Padding to create a larger button */
-            cursor: pointer;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
-            font-family: 'Orbitron', sans-serif; /* Font style to match the image */
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
-            margin-left: -74vw;
-            position: relative;
-            top: -18vh;
-        }
-
-
-        button:hover {
-            transform: scale(1.05); /* Slightly larger on hover for emphasis */
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Increase shadow for hover effect */
-        }
-
-        button a {
-            text-decoration: none;
-            color: #ffffff; /* White text for readability */
-            font-weight: bold;
-            font-size: 18px;
-            display: inline-block;
-        }
-
-        button p {
-            margin: 0; /* Remove any default margin from paragraph */
-        }
-
-        button a:hover {
-            color: #f1f1f1; /* Slightly change the color of text on hover */
-        }
-
-        .animate__animated.animate__rubberBand {
-            display: inline-block;
-            animation-duration: 1s;
-            animation-iteration-count: 1;
-        }
-
-
-
-        /*//////////////////////////////////////////// About Section ///////////////////////////////////////////////////////////*/
-
-
-        #about {
-            background-color: #2c2c2c;
-            padding: 60px 40px;
-            text-align: left; /* Align text to the left */
-            padding-left: 80px; /* Adds 80px spacing from the left */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-            /*background-color: red;*/
-        }
-
-        /*#about h1 {
-            color: #ff6600;
-            font-size: 55px; !* Increases the text size *!
-            font-weight: bold; !* Makes the text bold *!
-        }
-
-        #abouttxt2 {
-            font-size: 18px;
-            color: #bdbdbd;
-            margin-top: 80%; !* Adds space between #about h1 and #abouttxt2 *!
-        }*/
-
-        #about h1 {
-            color: #ff6600;
-            font-size: 55px; /* Increases the text size */
-            font-weight: bold; /* Makes the text bold */
-            margin-bottom: 10px; /* Reduces space below the h1 */
-        }
-
-        #abouttxt1 {
-            font-style: normal;
-            font-size: 20px;
-            margin-bottom: 20px;
-            text-align: left;
-            color: #ffffff;
-        }
-
-        /*#abouttxt2 {
-            display: flex; !* Aligns the text in columns *!
-            justify-content: space-between; !* Ensures both columns are on opposite sides *!
-            padding: 20px; !* Adds space inside the border *!
-            border: 2px solid #ff6600; !* Surrounds the text with a border *!
-            border-radius: 10px; !* Rounds the border edges *!
-            margin-top: 6%; !* Adjusts space between h1 and the bordered text *!
-            background-color: #2c2c2c; !* Optional: Adds background color inside the border *!
-            color: #bdbdbd; !* Ensures the text color matches the design *!
-        }
-
-
-        #abouttxt2 .column {
-           !* flex: 1; !* Ensures both columns take equal width *!*!
-            width: 30%; !* Set each column to 40% of the container width *!
-            padding: 0 10px; !* Adds padding between the columns *!
-        }*/
-
-        #abouttxt2 {
-            display: flex; /* Align content in two columns */
-            justify-content: space-between; /* Space the columns evenly */
-            padding: 10px 15px; /* Adds space inside the border */
-            border: 2px solid #ff6600; /* Adds an orange border around the container */
-            border-radius: 10px; /* Rounds the border edges */
-            margin-top: 40px; /* Adds margin from the top */
-            background-color: #2c2c2c; /* Adds background color */
-            color: #ffffff; /* Sets text color */
-            max-width: 800px; /* Limit the overall width of the container */
-            margin-left: 0; /* Move the container to the left */
-            margin-right: auto; /* Center the container horizontally */
-            background-color: rgba(119, 48, 8, 0.29); /* Add background color*/
-            min-height: 200px; /* Increases the height of the container */
-
-        }
-
-
-        #abouttxt2 .column1 {
-            flex: 0 0 61%; /* Set column1 to 40% width */
-            padding-right: 10px; /* Adds padding to separate from column2 */
-        }
-
-        #abouttxt2 .column2 {
-            flex: 0 0 55%; /* Set column2 to 55% width */
-            padding-left: 10px; /* Adds padding on the left side of column2 */
-        }
-
-        #abouttxt2 .column1,
-        #abouttxt2 .column2 {
-            line-height: 3.8; /* Increases the space between rows */
-        }
-
-
-        #aboutImg img {
-            width: 360px;
-            height: 420px;
-            border-radius: 15%; /* Keeps the image slightly rounded */
-            margin-bottom: 20px;
-            padding: 20px; /* Adds space between the image and the border */
-            border: 6px solid #ff6600; /* Adds an orange border around the image */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for the box effect */
-            margin-left: 70%;
-
-        }
-
-        #aboutImg {
-            margin-top: -550px; /* Lifts the image up slightly */
-        }
-
-
-        #abouttxt3 {
-            max-width: 810px;
-            margin: 20px auto;
-            font-size: 16px;
-            color: #ffffff;
-            margin-left: 0;
-        }
-
-
-        /*===================Education & Experience================*/
-
-
-        /* Container for the whole section */
-        #education-experience {
-            display: flex; /* Flexbox layout to position the image and text side by side */
-            justify-content: space-between; /* Space between the image and the text */
-            align-items: flex-start; /* Aligns the content to the top */
-            padding: 40px;
-            background-color: #1a1a1a; /* Dark background for the section */
-            border-radius: 10px;
-            margin-top: 150px;
-            margin-left: -41px;
-        }
-
-        /* Heading for Education & Experience */
-        #education-experience h3 {
-            font-size: 49px;
-            color: #ff6600;
-            width: 100%;
-            margin-top: 25px;
-            margin-bottom: 100px;
-        }
-
-
-        /* Container for the whole section */
-        .education-experience-container {
-            color: #ffffff; /* White text */
-            font-family: 'Roboto', sans-serif;
-        }
-
-        /* Title for Education */
-        .education-title {
-            font-size: 40px;
-            color: #ff6600;
-            text-align: left;
-            margin-bottom: 30px;
-            margin-left: -14vw;
-            margin-top: 118px;
-
-            /* Custom underline */
-            border-bottom: 3px solid #ff6600; /* Adds a thick orange underline */
-            padding-bottom: 10px; /* Adds spacing between text and the underline */
-            width: 24vw; /* Increase the width of the underline to 80% of the container */
-            display: block; /* Ensures that width applies correctly */
-            /*margin: 0 auto;*/ /* Centers the underline */
-        }
-
-
-        /* List layout for education section */
-        .education-container {
-            list-style-type: none; /* Remove default bullet points */
-            padding: 20px;
-            margin-top: -381px;
-            border: 2px solid #ff6600;
-            border-radius: 20px;
-            background-color: #1a1a1a;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            margin-left: -227px;
-            width: 37vw;
-        }
-
-        /* List items styling */
-        .education-container li {
-            color: #ffffff;
-            font-size: 18px;
-            padding: 10px 0;
-            height: 17px;
-            margin-bottom: 0px;
-        }
-
-        .education-details h5{
-            font-size: 29px;
-        }
-
-        /* Image styling */
-
-        .education-experience-container img {
-            width: 410px;
-            height: 370px;
-            border-radius: 45px;
-            margin-bottom: 20px;
-            margin-left: -59vw;
-            margin-top: -25px;
-
-            /* Add a border around the image */
-            border: 4px solid #ff6600; /* Orange border */
-
-            /* Create space between the image and the border */
-            padding: 10px; /* Adjust padding to control the distance between the image and the border */
-
-            /* Optional: add background color to the padding area for better visibility */
-            background-color: #1a1a1a; /* Dark background behind the border */
-
-        }
-
-        .experience-container {
-            position: relative;
-        }
-
-        /* Experience title styling */
-        .experience-title {
-            font-size: 40px;
-            color: #ff6600;
-            /*text-align: center;*/
-            margin-bottom: 30px;
-            margin-left: -14vw;
-            text-align: left;
-            margin-top: 118px;
-
-            /* Custom underline */
-            border-bottom: 3px solid #ff6600; /* Adds a thick orange underline */
-            padding-bottom: 10px; /* Adds spacing between text and the underline */
-            width: 24vw; /* Increase the width of the underline to 80% of the container */
-            display: block; /* Ensures that width applies correctly */
-            /*margin: 0 auto;*/ /* Centers the underline */
-        }
-
-        .expImf img {
-            width: 412px;
-            height: 370px;
-            border-radius: 45px;
-            margin-bottom: 30px;
-            margin-left: -59vw;
-            margin-top: -45px;
-
-            /* Add a border around the image */
-            border: 4px solid #ff6600; /* Orange border */
-
-            /* Create space between the image and the border */
-            padding: 10px; /* Adjust padding to control the distance between the image and the border */
-
-            /* Optional: add background color to the padding area for better visibility */
-            background-color: #1a1a1a; /* Dark background behind the border */
-
-        }
-
-        .experience-list li {
-            color: #ffffff;
-            font-size: 18px;
-            padding: 10px 0;
-            height: 17px;
-        }
-
-        .experience-list {
-            padding: 20px; /* Creates space between the content and the border */
-            border: 3px solid #ff6600; /* Adds an orange border around the list */
-            border-radius: 10px; /* Optional: Rounded corners for the border */
-            background-color: #1a1a1a; /* Optional: Dark background inside the border */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for depth */
-            position: absolute;
-            top: 16vh;
-            left: -14vw;
-        }
-
-        /*////////////////////// Skills ////////////////////////*/
-
-        /* Skills Title */
-        #skills h3 {
-            color: #ff6600; /* Orange color for the heading */
-            font-size: 40px;
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        /* General Styles */
-        .skills-section {
-            padding: 30px;
-            background-color: #1a1a1a; /* Dark background */
-            border-radius: 20px; /* Rounded corners */
-            color: #ffffff; /* White text */
-            font-family: 'Roboto', sans-serif;
-            border: 3px solid #ff6600; /* Orange border */
-            width: 90%; /* Adjust width */
-            max-width: 1200px;
-            margin: 20px auto; /* Centering the section */
-            position: relative;
-        }
-
-
-        /* Container for progress bars */
-        .progress-bars {
-            width: 100%;
-            margin-top: 20px;
-            transform: translate(25px, -261px);     /* Reduced margin-top to lift it up */
-        }
-
-        .progress-bars p {
-            font-size: 18px;
-            margin-bottom: 15px;
-            color: #ffffff;
-        }
-
-        /* Base for the progress bar (gray background) */
-        .progress-bars p span {
-            display: inline-block;
-            width: 35%;
-            height: 8px;
-            background-color: #cccccc;
-            border-radius: 10px;
-            margin-left: 23px;
-            vertical-align: middle;
-            position: relative;
-        }
-
-
-        /* Filled part of the progress bar (orange) */
-        .progress-bars p span.fill {
-            background-color: #ff6600;
-            height: 100%;
-            display: inline-block;
-            border-radius: 10px;
-            position: absolute;
-            top: 0;
-            left: -24px;
-        }
-
-        /* Example of different progress levels */
-        .progress-java .fill {
-            width: 75%;
-        }
-
-        .progress-html .fill {
-            width: 80%; /* HTML is at 75% */
-        }
-
-        .progress-figma .fill {
-            width: 85%; /* Figma is at 80% */
-        }
-
-        .progress-sql .fill {
-            width: 80%; /* SQL is at 80% */
-        }
-
-
-
-        .logos {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);  /* 2 columns grid */
-            gap: 63px;  /* Space between the logos */
-            justify-items: center;  /* Center items horizontally */
-            align-items: center;    /* Center items vertically */
-            width: 70%;  /* Adjusted width for the grid */
-            max-width: 600px;   /* Optional: Limit the maximum width */
-            margin-left: auto;
-            margin-right: auto; /* Center the grid horizontally */
-            transform: translate(49%, 50%); /* Shift the grid to the right by 20% and down */
-        }
-
-
-
-        /* Individual logo images */
-        .logos img {
-            width: 100px;
-            height: 100px;
-            border-radius: 10px; /* Optional: Rounded corners */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-        }
-
-
-        /* Container for the vertical line */
-        .vertical-line {
-            width: 2px; /* Line width */
-            height: 457px; /* Line height */
-            background-color: #cccccc; /* Line color (light gray) */
-            margin: auto; /* Center the line horizontally */
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-
-
-
-        /*----------------------Circle1------------------------*/
-
-
-        .circle1 {
-            width: 200px;
-            aspect-ratio: 1 / 1;
-            border-radius: 100%;
-            background: #1a1a1a;
-            position: absolute;
-            right: 0;
-            left: -57vw;
-            top: 177px;
-            bottom: 0;
-            margin: auto;
-            /* animation: rotate 2s infinite linear; */
-        }
-
-        .circle1 h2 {
-            width: max-content;
-            height: max-content;
-            color: #ffffff;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            font-size: 50px;
-        }
-
-        .circle1::before {
-            content: "";
-            border: 20px solid dimgrey; /* Increased border thickness */
-            border-radius: 100%;
-            border-top-color: #ff6600; /* Orange top border */
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-        }
-
-
-        .circle1:hover::before {
-            transform: rotate(360deg);
-            transition-duration: 2s;
-        }
-
-        #c1 span {
-            display: block;
-            font-weight: bold;
-            position: absolute;
-            bottom: -30px;
-            font-size: 20px;
-            color: #ffffff;
-            text-align: center;
-            top: 66vh;
-            left: 83px;
-
-        }
-
-
-        /*----------------------Circle2------------------------*/
-
-        .circle2 {
-            width: 200px;
-            aspect-ratio: 1 / 1;
-            border-radius: 100%;
-            background: #1a1a1a;
-            position: absolute;
-            right: 0;
-            left: -23vw;
-            top: 177px;
-            bottom: 0;
-            margin: auto;
-            /* animation: rotate 2s infinite linear; */
-        }
-
-        .circle2 h2 {
-            width: max-content;
-            height: max-content;
-            color: #ffffff;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            font-size: 50px;
-        }
-
-        .circle2::before {
-            content: "";
-            border: 20px solid dimgrey; /* Increased border thickness */
-            border-radius: 100%;
-            border-top-color: #ff6600; /* Orange top border */
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-        }
-
-
-        .circle2:hover::before {
-            transform: rotate(360deg);
-            transition-duration: 2s;
-        }
-
-
-        #c2 span {
-            display: block;
-            font-weight: bold;
-            position: absolute;
-            bottom: -30px;
-            font-size: 20px;
-            color: #ffffff;
-            text-align: center;
-            top: 66vh;
-            left: 375px;
-
-        }
-
-
-/*------------------------Achievements---------------------------*/
-
-        /* Achievements container */
-        .achievements {
-            text-align: center;
-            padding: 20px;
-            background-color: #1a1a1a; /* Dark background */
-            font-family: 'Roboto', sans-serif;
-            border-radius: 10px;
-        }
-
-        /* Title Styling */
-        .achievements h3 {
-            color: #ff6600; /* Orange title */
-            font-size: 36px;
-            margin-bottom: 30px;
-        }
-
-        /* Flexbox for images */
-        .achievements div {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap; /* Ensures images wrap on smaller screens */
-            gap: 20px; /* Space between the images */
-        }
-
-        /* Image Styling */
-        .achievements img {
-            border-radius: 15px; /* Rounded corners for the images */
-            border: 4px solid #ff6600; /* Orange border around the images */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover */
-            padding: 10px;
-        }
-
-        /* Hover Effect for Images */
-        .achievements img:hover {
-            transform: scale(1.05); /* Slight zoom effect on hover */
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-        }
-
-        /*@media  screen and (min-width: 768px) {*/
-        /*    .achievements img {*/
-        /*        padding:5px;*/
-        /*    }*/
-        /*    .logos {*/
-        /*        grid-template-columns: repeat(3, 1fr);  !* Adjusted grid to 3 columns *!*/
-        /*    }*/
-        /*    */
-        /*    */
-        /*}*/
-        /*@media  screen and (min-width: 1024px) {*/
-        /*    .logos {*/
-        /*        grid-template-columns: repeat(4, 1fr);  !* Adjusted grid to 4 columns *!*/
-        /*    }*/
-        /*}*/
-
-
-        /*------------------------------Project---------------------------------*/
-
-
-        /* Container for the project section */
-        #project {
-            margin-top: 100px !important;
-            margin-bottom: 100px ! important;
-            padding: 85px;
-            background-color: #1a1a1a;
-            font-family: 'Roboto', sans-serif;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 1200px;
-            margin: 0px auto;
-            border: 3px solid #ff6600;
-            position: relative;
-            scroll-margin-top: 200px;
-        }
-
-
-        /* Title styling */
-        #project div h2 {
-            color: #ff6600;
-            font-size: 48px;
-            text-align: left;
-            margin-bottom: 30px;
-            position: absolute;
-            top: -4vh;
-        }
-
-        /* Main container using Flexbox */
-        #project main {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Image styling */
-        #project main img {
-            border-radius: 20px;
-            width: 305px;
-            height: 230px;
-            border: 4px solid #ff6600;
-            padding: 15px;
-            position: relative;
-            top: 6vh;
-        }
-
-        /* Project content container */
-        #project main div {
-            flex-grow: 1;
-            padding-left: 20px;
-        }
-
-        /* Project title */
-        #project main div h4 {
-            color: #ffffff;
-            font-size: 34px;
-            margin-bottom: 10px;
-            position: absolute;
-            top: 8vh;
-            left: 42vw;
-        }
-
-        /* Project subtitle */
-        #project main div h5 {
-            color: #cccccc;
-            font-size: 22px;
-            margin-bottom: 20px;
-            position: absolute;
-            left: 42vw;
-            top: 20vh;
-        }
-
-        #projrctCont {
-            font-size: 17px;
-            color: #ffffff;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            font-family: 'Roboto', sans-serif;
-            position: absolute;
-            top: 31vh;
-            left: 42vw;
-        }
-
-        /* Container for the Github section */
-        #projectGit {
-            margin-top: 20px;
-        }
-
-        /* Styling for the "Github:" label */
-        #projectGit p {
-            font-size: 18px;
-            color: #ffffff;
-            font-weight: bold;
-            margin-bottom: 10px;
-            display: inline-block;
-            position: absolute;
-            top: 40vh;
-            left: 42vw;
-        }
-
-        /* Project description */
-        #project main div ul {
-            list-style: none;
-            padding: 0;
-            color: #ffffff; /* White text */
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        /* Styling for the button container */
-        #btn {
-            display: flex;
-            gap: 26px;
-            margin-top: 20px;
-            position: absolute;
-            top: 35vh;
-            left: 50vw;
-        }
-
-        /* Styling for the buttons */
-        #btn button {
-            background-color: #ff6600; /* Orange background */
-            border: none; /* Remove default button border */
-            border-radius: 10px; /* Rounded corners */
-            padding: 10px 20px; /* Button padding */
-            cursor: pointer; /* Pointer cursor on hover */
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Text inside the button */
-        #btn button p {
-            color: #ffffff; /* White text */
-            font-size: 16px;
-            margin: 0; /* Remove default margin for paragraph */
-            font-weight: bold;
-        }
-
-        /* Hover effect for the buttons */
-        #btn button:hover {
-            background-color: #e65c00; /* Darker orange on hover */
-            transform: translateY(-3px); /* Slight lift on hover */
-        }
-
-        /* Styling for the links inside the buttons */
-        #btn button a {
-            color: inherit; /* Inherit the text color (white) */
-            text-decoration: none; /* Remove underline from link */
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Styling for the list container */
-        #lstCont {
-            font-size: 16px;
-            color: #ffffff;
-            margin-top: 20px;
-            font-family: 'Roboto', sans-serif;
-            text-align: left;
-            padding: 10px 0;
-            position: absolute;
-            top: 47vh;
-            left: 41vw;
-        }
-
-/*----------------------------------- Assignment ----------------------------------------*/
-
-
-        #Assign {
-            text-align: center;
-            padding: 110px;
-            background-color: #2c2c2c;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        /* Main container for the assignment section */
-        #assignment {
-            padding: 32px;
-            background-color: #1a1a1a;
-            font-family: 'Roboto', sans-serif;
-            color: #ffffff;
-            border-radius: 40px;
-        }
-
-        /* Title styling */
-        #assignment .topics {
-            font-size: 36px;
-            color: #ff6600; /* Orange color for the heading */
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        /* Section layout for the cards */
-        #assignment section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-            gap: 30px; /* Increase space between the cards */
-            max-width: 1200px;
-            margin: 0 auto; /* Center the section */
-            padding: 10px; /* Adds padding inside the section */
-        }
-
-        /* Card styling */
-        .card {
-            background-color: #262626; /* Slightly lighter dark background for the card */
-            border-radius: 10px; /* Rounded corners */
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            margin: 15px; /* Add margin around each card for more space */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-        }
-
-        /* Hover effect for cards */
-        .card:hover {
-            transform: translateY(-10px); /* Lift card on hover */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-        }
-
-        /* Content inside the card */
-        .project-content h2 {
-            font-size: 22px;
-            color: #ffffff; /* White text inside the card */
-            text-align: center;
-            margin: 0;
-        }
-
-        /* Link styling */
-        .project-content h2 a {
-            color: #ff6600; /* Orange link color */
-            text-decoration: none; /* Remove underline from links */
-            transition: color 0.3s ease; /* Smooth transition on hover */
-        }
-
-        /* Hover effect for links */
-        .project-content h2 a:hover {
-            color: #ffffff; /* Change to white on hover */
-        }
-
- /*-------------------------------- Service ------------------------------------------*/
-
-        /* General container for the service section */
-        #service {
-            padding: 60px 20px;
-            background-color: #1a1a1a;
-            color: #ffffff;
-            font-family: 'Roboto', sans-serif;
-            scroll-margin-top: 50px;
-            position: relative;
-        }
-
-        /* Title for the section */
-        #service h2 {
-            font-size: 50px;
-            color: #ff6600;
-            text-align: center;
-            margin-bottom: 40px;
-            position: absolute;
-            top: 4vh;
-            left: 5vw;
-        }
-
-
-        /* Styling for the service motto container */
-        .serviceMotto {
-            padding: 12px 34px;
-            background-color: transparent;
-            border: 2px solid #ff6600;
-            border-radius: 30px;
-            text-align: center;
-            width: 31%;
-            margin: 30px auto;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
-            left: 12vw;
-            top: 5vh;
-        }
-
-        /* Paragraph inside the service motto */
-        .serviceMotto p {
-            font-size: 18px;
-            color: #ffffff; /* White text */
-            font-style: italic; /* Italic style for the text */
-            margin: 0;
-            line-height: 1.5; /* Spacing between lines */
-        }
-
-        /* Optional: Add hover effect for interaction */
-        .serviceMotto:hover {
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-            transform: translateY(-5px); /* Slight lift effect on hover */
-            transition: all 0.3s ease-in-out;
-        }
-
-
-        /* Container for the service offer title */
-        .serviceOfferTitle h4 {
-            font-size: 36px; /* Adjust size of the title */
-            color: #ffffff; /* White text color */
-            text-align: left; /* Align text to the left */
-            font-weight: bold;
-            position: relative;
-            margin-bottom: 20px; /* Add spacing below the title */
-            letter-spacing: 1px; /* Add a little space between letters */
-        }
-
-        /* Custom underline */
-        .serviceOfferTitle h4::after {
-            content: "";
-            display: block;
-            width: 39%; /* Full width underline */
-            height: 2px; /* Thickness of the line */
-            background-color: #ccc; /* Light grey underline */
-            margin-top: 10px; /* Space between text and underline */
-        }
-
-        /*--------------------------------------- Services --------------------------------------------*/
-
-
-        /* Container for service cards */
-        .serviceCard {
-            display: flex;
-            justify-content: space-between;
-            list-style-type: none; /* Remove bullet points */
-            padding: 0;
-            margin: 40px 0;
-            width: 100%;
-        }
-
-        /* Individual service card styling */
-        .serviceCard li {
-            background: linear-gradient(145deg, #7b401b, #2f1b0e); /* Gradient background for the cards */
-            color: #ffffff; /* White text */
-            border-radius: 20px; /* Rounded corners */
-            width: 15%; /* Adjust card width */
-            padding: 30px 20px; /* Padding inside the card */
-            text-align: center; /* Center text inside the card */
-            font-size: 18px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Hover effect for the cards */
-        .serviceCard li:hover {
-            transform: translateY(-10px); /* Lift card on hover */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-        }
-
-        /* Styling for icons inside the cards */
-        .serviceCard li img {
-            width: 60px; /* Adjust icon size */
-            height: 72px;
-            margin-bottom: 15px;
-        }
-
-        /* Styling for text (service titles) inside the cards */
-        .serviceCard li p {
-            font-size: 19px;
-            color: #ffffff;
-            margin: 0; /* Remove margin from paragraphs */
-        }
-
-
-
-        /*----------------------------------------------------------------------*/
-
-        /* Container for the stats */
-
-        .statusBar {
-            display: flex;
-            justify-content: space-around; /* Spread items evenly */
-            align-items: center; /* Vertically center items */
-            background: linear-gradient(145deg, #b34c0c, #5b2705); /* Gradient background */
-            padding: 10px 20px; /* Reduced top/bottom padding to lower the height */
-            border-radius: 30px; /* Rounded corners */
-            width: 92%; /* Adjust width */
-            margin: 60px auto; /* Increased top margin to move down */
-            height: 95px; /* Set a fixed height to control the size */
-            position: relative;
-            top: 8vh;
-        }
-
-        /* Individual stat boxes */
-        .statusBar div {
-            text-align: center; /* Center the text */
-            color: #ffffff; /* White text color */
-            font-size: 22px; /* Adjust font size */
-            font-weight: bold; /* Make numbers bold */
-            line-height: 1.5; /* Adjust line height for spacing */
-            padding: 10px 20px; /* Padding inside the boxes */
-        }
-
-        /* Styling for numbers */
-        .statusBar div:first-child {
-            font-size: 31px;
-            margin-bottom: 10px;
-        }
-
-        /* Optional hover effect */
-        .statusBar div:hover {
-            transform: translateY(-5px); /* Lift effect on hover */
-            transition: all 0.3s ease-in-out;
-        }
-
-
-        /*-------------------------------My Work------------------------------------*/
-
-
-        .myWork {
-            text-align: center;
-            font-size: 45px;
-            color: #ffffff;
-            text-transform: uppercase;
-            margin-bottom: 30px; /* Space below the heading */
-        }
-
-        /* General styling for My Work section */
-        .myworkSection {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #1a1a1a;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            margin: 150px auto; /* Increase the top margin to move the section down */
-            width: 90%;
-        }
-
-        /* Styling for My Work heading */
-        .myWork h3 {
-            font-size: 45px;
-            color: #ffffff;
-            margin-right: 20px;
-            text-transform: uppercase;
-            position: relative;
-            top: -17vh;
-            left: 41vw;
-            max-width: 300px; /* Adjust the max-width value as needed */
-            text-align: center; /* Optionally center the text */
-            word-wrap: break-word; /* Ensure the text wraps if it exceeds the max-width */
-            width: max-content;
-        }
-
-        /* Styling for the image inside My Work section */
-        .myworkImg img {
-            border-radius: 57px;
-            width: 350px;
-            height: 350px;
-            border: 5px solid #ff6600;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            padding: 20px;
-            position: relative;
-            left: -9vw;
-        }
-
-        /* Content styling */
-        .myworkContent {
-            max-width: 600px;
-            margin-left: 30px;
-        }
-
-
-        .myworkContent p {
-            font-size: 18px;
-            color: #ffffff;
-            line-height: 1.8;
-            padding: 20px;
-            border: 2px solid transparent; /* Transparent border for border-image */
-            border-image: linear-gradient(147deg, #ff6100, #853703a1) 1; /* Gradient for the border */
-            border-radius: 20px; /* Rounded corners */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            background-color: transparent;
-            font-style: italic;
-            overflow: hidden; /* Ensure the content respects the border radius */
-        }
-
-        /* Styling for Hire Me button */
-        .hireBtn {
-            padding: 15px 40px;
-            background-color: #ff6600;
-            color: #ffffff;
-            font-size: 18px;
-            font-weight: bold;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            margin-left: 50px;
-            position: relative;
-            top: 136px;
-            left: -357px;
-            width: 21vw;
-        }
-
-        .hireBtn:hover {
-            background-color: #e65c00;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            transform: translateY(-5px);
-        }
-
-
-/*------------------------------------------- Gallery ----------------------------------------------*/
-
-        #gallery {
-            padding: 60px 20px;
-            background-color: #1a1a1a; /* Dark background */
-            text-align: center; /* Center the content */
-        }
-
-        /* Welcome to my Gallery */
-        .welcomeGal {
-            text-align: left; /* Align text to the left */
-            margin-top: 40px; /* Move the entire section down */
-            margin-bottom: 40px; /* Space below the welcome text */
-            padding-left: 20px; /* Optional: Add some padding from the left */
-        }
-
-        .welcomeGal p {
-            font-size: 38px;
-            color: #ffffff;
-            font-family: 'Roboto', sans-serif;
-            display: inline-block;
-            font-weight: bold;
-        }
-
-        .welcomeGal .highlighted-text {
-            color: #ff6600; /* Orange for 'Gallery' */
-            font-size: 56px;
-            font-weight: bold;
-            margin-left: 10px;
-            display: inline; /* Keep it inline with the rest of the text */
-        }
-
-
-        /* Optional: Add hover effect */
-        .welcomeGal .highlighted-text:hover {
-            color: #e65c00; /* Darker shade of orange on hover */
-            transition: color 0.3s ease-in-out;
-        }
-
-/*--------------------Images-----------------------*/
-
-        .galleryImgs {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 20px;
-            margin-top: 60px; /* Increased top margin to move the section down */
-        }
-
-        .galleryImgs img {
-            /*width: 300px;
-            height: 300px;*/
-            border: 2px solid #e65c00;
-            border-radius: 20px;
-            box-shadow: 4px 7px 7px 0px #e65c00;
-            cursor: pointer;
-            margin: 10px;
-            transition: 400ms;
-        }
-
-        .galleryImgs img:hover {
-            filter: grayscale(1);
-            transform: scale(1.05);
-        }
-
-
-/*-------------------------------------------- Contact ---------------------------------------------*/
-
-
-        /* Section Styling */
-        #contact {
-            background: #111; /* Dark background for contrast */
-            color: #fff;
-            padding: 50px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .contactTitle {
-            position: relative;
-            top: -25vh;
-            left: -28vw;
-            margin-bottom: 30px;
-        }
-
-        .contactTitle h2 {
-            font-size: 55px;
-            font-weight: bold;
-            color: #e65c00;
-            text-align: left;
-            font-family: 'Arial', sans-serif;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-            position: relative;
-            top: -51vh;
-            left: 6vw;
-        }
-
-
-        .subContent {
-            display: flex;
-            align-items: center;
-            margin-left: -20px;
-            position: relative;
-            /*top: 6vh;
-            left: -37vw;*/
-        }
-
-        .subContent p {
-            font-size: 40px; /* Size of the "GET IN TOUCH" text */
-            font-weight: bold; /* Bold text */
-            color: #fff; /* White color */
-            font-family: 'Arial', sans-serif; /* Clean and modern font */
-            margin-left: 20px; /* Space between the gradient and text */
-            letter-spacing: 2px; /* Spacing between letters */
-            position: relative;
-            top: 16vh;
-            left: -33vw;
-        }
-
-        /* Gradient bar on the left */
-        .subContent::before {
-            content: '';
-            display: block;
-            width: 17px;
-            height: 50px;
-            background: linear-gradient(to bottom, #e65c00, #111); /* Gradient effect */
-            border-radius: 5px; /* Rounded corners for the bar */
-            position: relative;
-            top: 16vh;
-            left: -33vw;
-        }
-
-        /*------------------------*/
-
-
-        .contactSources {
-            display: flex;
-            flex-direction: column;
-            gap: 20px; /* Space between each contact item */
-            color: #fff; /* White text */
-            font-family: 'Arial', sans-serif; /* Modern, clean font */
-            font-size: 18px; /* Adjust text size */
-            position: relative;
-            top: 20vh;
-            left: -32vw;
-        }
-
-
-        .contactSources div {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            font-size: 33px;
-        }
-
-        .contactSources img {
-            margin-right: 15px; /* Space between the icon and the text */
-            width: 50px;/* Set a fixed size for icons */
-            height: 50px;
-        }
-
-        .contactSources span a {
-            color: #fff;
-            text-decoration: none; /* Remove underline from links */
-        }
-
-        .contactSources span a:hover {
-            color: #e65c00; /* Highlight color on hover */
-            text-decoration: underline; /* Underline on hover */
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .contactSources {
-                gap: 10px;
-            }
-
-            .contactSources img {
-                width: 20px;
-                height: 20px;
-            }
-
-            .contactSources span a {
-                font-size: 16px; /* Slightly smaller font on small screens */
-            }
-        }
-
-
-        .contact-VerticalLine {
-            width: 2px;
-            height: 468px;
-            background-color: #cccccc;
-            margin: auto;
-            position: relative;
-            top: -30vh;
-            bottom: 0;
-            left: -7vw;
-            right: 0;
-        }
-
-        /*---------------------------------------*/
-
-
-        .contact-form {
-            background-color: #121212;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            width: 500px;
-            position: relative;
-            top: -95vh;
-            left: 15vw;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            margin-bottom: 10px;
-            font-size: 14px;
-            color: #ccc; /* Lighter text for labels */
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            background-color: #2c2c2c;
-            border: none;
-            border-radius: 4px;
-            padding: 10px;
-            color: #fff;
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-
-        input[type="text"]::placeholder,
-        input[type="email"]::placeholder,
-        textarea::placeholder {
-            color: #555; /* Darker grey placeholder text */
-        }
-
-        textarea {
-            resize: none;
-            height: 100px;
-        }
-
-        .submitBtn {
-            background-color: #ff6600;
-            border: none;
-            padding: 10px;
-            border-radius: 14px;
-            color: #000000;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-align: center;
-            position: relative;
-            width: 17vw;
-            left: 81vw;
-            top: 0vh;
-        }
-
-        button.submitBtn:hover {
-            background-color: #ff5500;
-        }
-
-        button.submitBtn:focus {
-            outline: none;
-            box-shadow: 0 0 10px rgba(255, 102, 0, 0.8);
-        }
-
-
- /*--------------------------------- Footer --------------------------------------------*/
-
-
-
-        .footer {
-            background-color: #121212;
-            padding: 40px 20px;
-            color: #ccc;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 15px;
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-        }
-
-        .social-icons img {
-            width: 100%;
-            height: auto;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            border-top: 1px solid #444;
-            padding-top: 20px;
-            margin-top: 20px;
-        }
-
-        .footerBrandName {
-            margin-bottom: 20px; /* Space below the brand logo */
-        }
-
-        .footerName-logo {
-            display: block;
-            position: relative;
-            /*left: 158px;
-            top: 27px;*/
-            width: 210px; /* Brand logo size */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        .footer-content > div {
-            flex: 1;
-            margin: 20px;
-            min-width: 200px;
-        }
-
-        .quote {
-            max-width: 400px;
-        }
-
-        .quote p {
-            font-size: 14px;
-            color: #ccc;
-            font-style: italic;
-            margin-bottom: 15px;
-        }
-
-        .quote h2 {
-            color: #e65c00;
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .links {
-            padding-right: 20px;
-        }
-
-        .footerVerticalLine {
-            border-right: 1px solid #444; /* Vertical line between sections */
-            height: auto;
-            margin: 0 20px; /* Space on either side of the vertical line */
-        }
-
-        .services {
-            padding-left: 20px;
-        }
-
-        .links h3, .services h3, .contact-info h3 {
-            color: #fff;
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-
-        .links ul, .services ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .links li, .services li {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        .links a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .links a:hover {
-            color: #e65c00;
-        }
-
-        .contact-info {
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            max-width: 300px;
-        }
-
-        .contact-info .footerBrandName {
-            margin-bottom: 15px;
-        }
-
-        .contact-info span {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .contact-info img {
-            margin-right: 10px;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-
-        .contact-info strong {
-            color: #e65c00;
-        }
-
-        .footer-content p {
-            color: #ccc;
-        }
-
-        .footer-content p:last-child {
-            color: #e65c00;
-            font-weight: bold;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .footer-content {
-                flex-direction: column;
-                align-items: center;
-            }
-            .footer-content > div {
-                margin: 10px 0;
-            }
-        }
-
-
-
-
-
     </style>
 
 </head>
 <body>
 
-<!-------------------------------- Home --------------------------------------------->
+<!--&lt;!&ndash; Heading bar &ndash;&gt;
+<nav class="nav">
+    <span>
+        <img class="name-logo" src="assets/images/Brand name img.png" alt="brand name img " width="210" height="40">    &lt;!&ndash;Brand name image eka danna&ndash;&gt;
+    </span>
 
-<!--home start-->
+    <ul class="nav-items">
+        <li>
+            <a href="#home">Home</a>
+        </li>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#project">Project</a>
+        </li>
+
+        <li>
+            <a href="#service">Service</a>
+        </li>
+
+        <li>
+            <a href="#gallery">Gallery</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+
+</nav>
+
+&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Home -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+
+&lt;!&ndash;home start&ndash;&gt;
 
 <section id="home">
     <div>
-        <!-- Heading bar -->
-        <nav class="nav">
-                <span>
-                    <!--<h1>
-                        <span>C</span>
-                        <span>HAMAX</span>
-                    </h1>-->
 
-                    <img class="name-logo" src="assets/images/Brand name img.png" alt="brand name img " width="210" height="40">    <!--Brand name image eka danna-->
-                </span>
-
-            <ul class="nav-items">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#project">Project</a>
-                </li>
-
-                <li>
-                    <a href="#service">Service</a>
-                </li>
-
-                <li>
-                    <a href="#gallery">Gallery</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-
-        </nav>
-
-        <div id="Hdiv2">
-
-            <!--<div>
-                <img src="assets/images/desktop-wallpaper-portfolio.jpg" alt=" main BD image " width="500" height="300">      &lt;!&ndash;background image eka danna&ndash;&gt;
-            </div>-->
+        &lt;!&ndash;<div id="Hdiv2">
 
             <div class="my-img">
-                <img src="assets/images/Me2.png" alt="my img " width="360" height="500">      <!--mage image eka danna-->
+                <img src="assets/images/Me2.png" alt="my img " width="360" height="500">      &lt;!&ndash;mage image eka danna&ndash;&gt;
             </div>
-        </div>
+        </div>&ndash;&gt;
 
         <main data-aos="fade-right"
               data-aos-offset="300"
@@ -1845,31 +98,31 @@
             <div class="social-link">
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/chinthana.chamodbn?mibextid=ZbWKwL">      <!--fb link eka danna-->
+                        <a href="https://www.facebook.com/chinthana.chamodbn?mibextid=ZbWKwL">      &lt;!&ndash;fb link eka danna&ndash;&gt;
                             <img src="assets/images/Facebook.png" alt="facebook" width="40" height="40">
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.instagram.com/chinthana_chamod_bn/">      <!-- instr link eka danna-->
+                        <a href="https://www.instagram.com/chinthana_chamod_bn/">      &lt;!&ndash; instr link eka danna&ndash;&gt;
                             <img src="assets/images/Instagram.png" alt="instagram" width="40" height="40">
                         </a>
                     </li>
 
                     <li>
-                        <a href="www.whatsapp/chamod.com">      <!--whatsapp link eka danna-->
+                        <a href="www.whatsapp/chamod.com">      &lt;!&ndash;whatsapp link eka danna&ndash;&gt;
                             <img src="assets/images/Whatsapp.png" alt="whatsapp" width="40" height="40">
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.linkedin.com/in/chinthana-chamod-2a133b323/">      <!--linkin link eka danna-->
+                        <a href="https://www.linkedin.com/in/chinthana-chamod-2a133b323/">      &lt;!&ndash;linkin link eka danna&ndash;&gt;
                             <img src="assets/images/Linkedin.png" alt="linkin" width="40" height="40">
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://github.com/chinthanachamod">      <!--github link eka danna-->
+                        <a href="https://github.com/chinthanachamod">      &lt;!&ndash;github link eka danna&ndash;&gt;
                             <img src="assets/images/GitHub.png" alt="github" width="40" height="40">
                         </a>
                     </li>
@@ -1878,7 +131,7 @@
 
             <br><br><br><br>
 
-            <div class="animate__animated animate__rubberBand">     <!--Animate.css-->
+            <div class="animate__animated animate__rubberBand">     &lt;!&ndash;Animate.css&ndash;&gt;
                 <button type="button">
                     <a href="assets/pdf/HMCCB Nawalawatta - New.pdf">
                         <p><b>DOWNLOAD CV</b></p>
@@ -1888,41 +141,86 @@
 
         </main>
 
-        <!--<div>
-            <p>
-                Developed by
-                <span>Chamod...</span>
-            </p>
-        </div>-->
+        <div id="Hdiv2">
+
+            <div class="my-img">
+                <img src="assets/images/Me2.png" alt="my img " width="360" height="500">      &lt;!&ndash;mage image eka danna&ndash;&gt;
+            </div>
+        </div>
+
 
     </div>
+</section>-->
+
+<!--home start-->   <!--new Home-->
+<section id="home">
+    <header>
+        <nav class="nav">
+            <div class="logo-container">
+                <img class="name-logo" src="assets/images/Brand name img.png" alt="Brand Name" width="210" height="40">
+            </div>
+
+            <ul class="nav-items" id="nav-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home-about" class="home-about">
+        <div class="about-container">
+            <img class="hero-img" src="assets/images/Me2.png" alt="my img ">
+            <div class="info-box">
+                <div class="text">
+                    <h1 id="Hello-Word">Hello, It's Me </h1>
+                    <h1 id="My-name">Chamod Nawalawatta </h1>
+                    <h2 id="i-am-Developer"> Full-stack Developer based in Sri Lanka.</h2>
+                    <p class="txt2">
+                        "Crafting Digital Excellence, One Line of Code at a Time.
+                        Transforming ideas into impactfull digital solutions with
+                        innovative design and cutting-edge technology."
+                    </p>
+
+                </div>
+                <br>
+                <div class="btn-group">
+                    <a href="assets/pdf/HMCCB Nawalawatta - New.pdf" class="btn"><b>Download CV</b></a>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.facebook.com/chinthana.chamodbn?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/chinthana_chamod_bn/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/chinthana-chamod-2a133b323/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/chinthanachamod"><i class="fab fa-github"></i></a>
+                    <a href="www.whatsapp/chamod.com"><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
 </section>
 
 <!--------------------------------- About -------------------------------------------->
 
-<section id="about">
+<!--<section id="about">
    <h1>About Me</h1>
 
     <div>
-        <!--<div id="aboutImg">
-            <img src="assets/images/IMG_2551.jpg" alt=" About Me image " width="300" height="300">     &lt;!&ndash; About me eke image eka danna&ndash;&gt;
-        </div>-->
 
         <main id="aboutMain">
 
             <p id="abouttxt1">
                 "True innovation stems from daring to defy the norm and envisioning the remarkable."
             </p>
-
-
-            <!--<p id="abouttxt2">
-                Name : H.M.C.Chamod Buddhi Nawalawatta <br>
-                Age : 24 yrs <br>
-                Nationality : Sri Lankan <br>
-                Occupation : Full-stack Developer   <br>
-                Telephone No : +94 71 7500 753  <br>
-                E-mail : chinthanachamod50@gmail.com
-            </p>-->
 
             <div id="abouttxt2">
                 <div class="column1">
@@ -1948,57 +246,11 @@
             </p>
 
             <div id="aboutImg">
-                <img src="assets/images/IMG_2551.jpg" alt=" About Me image " width="300" height="300">     <!-- About me eke image eka danna-->
+                <img src="assets/images/IMG_2551.jpg" alt=" About Me image " width="300" height="300">     &lt;!&ndash; About me eke image eka danna&ndash;&gt;
             </div>
 
-            <!--======================================================================================================-->
+            &lt;!&ndash;======================================================================================================&ndash;&gt;
 
-            <!--<div>
-                <h3>Education & Experience</h3>
-
-                <div>
-
-                    <h4>Education</h4>
-
-                    <img src="assets/images/graduates-student-graduation-caps-thrown-600nw-1937758900-ezgif.com-webp-to-jpg-converter.jpg" alt=" About Me image " width="300" height="300">      &lt;!&ndash;Education eke image eka danna&ndash;&gt;
-
-                    <div>
-                        <li>
-                            Completed O/L’s ( 2015 ) - Methodist Collage,Moratuwa
-                        </li>
-                        <li>
-                            Completed A/L’s ( 2018 ) - Central Collage,Bandaragama
-                        </li>
-                        <li>
-                            Completed JLPT N5 ( 2022 ) - JLEA
-                        </li>
-                    </div>
-
-                    <div>
-                        <h5>Institute of Software Engineering</h5>
-
-                        <p>
-                            Graduate Higher Diploma in Software Engineering <br>
-                            (Ongoing: 2023/25)
-                        </p>
-
-                        <li>
-                            Gained comprehensive knowledge and skills in software engineering.
-                        </li>
-                    </div>
-
-                    <h4>Experience</h4>
-
-                    <img src="assets/images/Work Experience.png" alt=" About Me image " width="300" height="300">      &lt;!&ndash;Experience eke image eka danna&ndash;&gt;
-
-                    <div>
-                        <li>
-                            6 months Work experience of Account assistant in Macksons Paints
-                        </li>
-                    </div>
-
-                </div>
-            </div>-->
 
             <div id="education-experience">
                 <h3>Education & Experience</h3>
@@ -2046,36 +298,8 @@
             </div>
 
 
+            &lt;!&ndash;======================================================================================================&ndash;&gt;
 
-
-            <!--======================================================================================================-->
-
-            <!--<h3> Skills </h3>
-
-            <div>
-                <div>
-                    <img src="assets/images/java_logo_640.jpg" alt=" Java logo " width="100" height="100">
-                    <img src="assets/images/HTML-5-Badge-Logo.png" alt=" HTML logo " width="100" height="100">
-                    <img src="assets/images/Figma.jpg" alt=" Figma logo " width="100" height="100">
-                    <img src="assets/images/SQL.png" alt=" SQL logo " width="100" height="100">
-                </div>
-
-                <div>
-
-                    <p>
-                        Java 75%  <br>
-                        HTML 75%  <br>
-                        Figma 80%  <br>
-                        SQL 80%
-                    </p>
-
-                    <p>
-                        Database Management     75% <br>
-                        Problem Solving     75%
-                    </p>
-
-                </div>
-            </div>-->
 
             <div id="skills">
 
@@ -2123,7 +347,7 @@
 
 
 
-            <!--======================================================================================================-->
+            &lt;!&ndash;======================================================================================================&ndash;&gt;
 
             <div class="achievements">
                 <h3>Achievements</h3>
@@ -2142,7 +366,7 @@
 </section>
 
 
-<!--------------------------------- Project -------------------------------------------->
+-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Project &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;
 
 <section id="project">
     <div>
@@ -2177,7 +401,7 @@
                         </button>
 
                         <button type="button">
-                            <a href="https://github.com/chinthanachamod/Animal-Hospital---Layered">
+                            <a href="https://github.com/chinthanachamod/Animal-Hospital-&#45;&#45;Layered">
                                 <p>Layered</p>
                             </a>
                         </button>
@@ -2194,11 +418,11 @@
         </main>
     </div>
 
-</section>
+</section>-->
 
 <!--------------------------------- Assignment -------------------------------------------->
 
-<main id="Assign">
+<!--<main id="Assign">
 
     <div id="assignment" class="assignment">
 
@@ -2224,7 +448,7 @@
             </div>
             <div class="card">
                 <div class="project-content">
-                    <h2><a href="https://github.com/chinthanachamod/CSS---Assignment-04">Assignment-04</a></h2>
+                    <h2><a href="https://github.com/chinthanachamod/CSS-&#45;&#45;Assignment-04">Assignment-04</a></h2>
                 </div>
             </div>
             <div class="card">
@@ -2241,11 +465,11 @@
 
     </div>
 
-</main>
+</main>-->
 
 <!--------------------------------- Service -------------------------------------------->
 
-<section id="service">
+<!--<section id="service">
     <h2>Service</h2>
 
     <main>
@@ -2261,23 +485,6 @@
                 <h4>WHAT TO OFFER</h4>
             </div>
 
-            <!--<ul class="serviceCard">
-                <li>
-                    Business Consultation
-                </li>
-                <li>
-                    Maintenance and Support
-                </li>
-                <li>
-                    Web App Development
-                </li>
-                <li>
-                    UI/UX Design
-                </li>
-                <li>
-                    Desktop Application
-                </li>
-            </ul>-->
             <ul class="serviceCard">
                 <li>
                     <img src="assets/images/businessConsult.png" alt="Business Consultation" width="50" height="50">
@@ -2343,11 +550,11 @@
         </div>
 
     </main>
-</section> <br>
+</section> <br>-->
 
 <!--------------------------------- Gallery -------------------------------------------->
 
-<section id="gallery">
+<!--<section id="gallery">
 
     <main>
         <div class="welcomeGal">
@@ -2372,68 +579,11 @@
 
     </main>
 
-</section>
+</section>-->
 
 <!--------------------------------- Contact -------------------------------------------->
 
 <!--<section id="contact">
-    <div class="contactTitle">
-        <h2>Contact</h2>
-    </div>
-
-    <main>
-
-        <div>
-            <div class="subContent">
-                <p>GET IN TOUCH</p>
-            </div>
-
-            <div class="contactSources">
-                <div>
-                    <img src="assets/images/call.png" alt="call" width="25" height="25">
-                    <span><a href="+94 71 750 0753">+94 71 750 0753</a></span>
-                </div>
-                <div>
-                    <img src="assets/images/Whatsapp.png" alt="whatsapp" width="25" height="25">
-                    <span><a href="+94 71 750 0753">+94 71 750 0753</a></span>
-                </div>
-                <div>
-                    <img src="assets/images/Gmail - Contact.png" alt="gmail" width="25" height="25">
-                    <span><a href="contactthroughtemail">chinthanachamod50@gmail.com</a></span>
-                </div>
-            </div>
-        </div>
-
-        <br><br>
-
-        <div>
-            <form action="">
-                <div>
-                    <label for="fullname">Your Full Name</label><br>
-                    <input type="fullname" id="fullname" placeholder="Enter Your Full Name">
-                </div>
-
-                <div>
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" placeholder="Enter your email">
-                </div>
-
-                <div>
-                    <label for="message">Email</label><br>
-                    <textarea id="message" placeholder="Enter your message"></textarea>
-                </div>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-
-    </main>
-
-</section>-->
-
-
-<section id="contact">
     <div class="contactTitle">
         <h2>Contact</h2>
     </div>
@@ -2486,161 +636,14 @@
 
 </section>
 
-<br><br>
+<br><br>-->
 
 <!--------------------------------- Footer -------------------------------------------->
-
-<!--<section class="footer">
-
-    <main>
-        <span class="footerImage">
-            <img src="assets/images/Facebook.png" alt="facebook" width="30" height="30">
-            <img src="assets/images/Instagram.png" alt="instagram" width="30" height="30">
-            <img src="assets/images/Whatsapp.png" alt="whatsapp" width="30" height="30">
-            <img src="assets/images/Linkedin.png" alt="linkdin" width="30" height="30">
-            <img src="assets/images/GitHub.png" alt="github" width="30" height="30">
-        </span>
-
-        <div>
-            <div class="footerContent">
-                <p>
-                    "Transforming your ideas into reality with innovative design and development. Let's collaborate to create something truly amazing together!”
-                </p>
-            </div>
-
-            <div>
-                <p>
-                    Come,
-                    Let’s Talk
-                </p>
-            </div>
-            <div>
-                <p>
-                    CRwaves@ 2024. All Rights Reserved.
-                </p>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <h5>Quick Links</h5>
-
-                <ul>
-                    <li> <a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h5>My Services</h5>
-
-                <ul>
-                    <li><a href="#service">AbouBusiness Consultation</a></li>
-                    <li><a href="#service">UI/UX Design, Web Design</a></li>
-                    <li><a href="#service">Maintenance and Support</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <br>
-
-        <div>
-            <div>
-
-
-                <span>
-                <img src="assets/images/icons8-location-50.png" alt="gmail" width="25" height="25">
-                     <h4>PO BOX</h4>
-                </span>
-
-                <p>
-                    30/15, <br>
-                    “Leisure Terrace”, <br>
-                    Cemetery Road, <br>
-                    Pinwala, <br>
-                    12500 <br>
-                    SL.
-
-                </p>
-
-            </div>
-
-            <div>
-                <p>
-                    <span>chinthanachamod50</span>
-                    @gmail.com
-                </p>
-            </div>
-
-        </div>
-
-    </main>
-
-</section>-->
-
-
-<footer class="footer">
-    <div class="social-icons">
-        <a href="#"><img src="assets/images/Facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="assets/images/Instagram.png" alt="Instagram"></a>
-        <a href="#"><img src="assets/images/Whatsapp.png" alt="WhatsApp"></a>
-        <a href="#"><img src="assets/images/Linkedin.png" alt="LinkedIn"></a>
-        <a href="#"><img src="assets/images/GitHub.png" alt="GitHub"></a>
-    </div>
-    <div class="footer-content">
-        <div class="quote">
-            <p>“Transforming your ideas into reality with innovative design and development. Let's collaborate to create something truly amazing together!”</p>
-            <h2>Come, Let's Talk</h2>
-            <p>CRwaves© 2024. All Rights Reserved.</p>
-        </div>
-        <div class="links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Vertical Line Divider -->
-        <div class="footerVerticalLine"></div>
-
-        <div class="services">
-            <h3>My Services</h3>
-            <ul>
-                <li>Business Consultation</li>
-                <li>UI/UX Design, Web Design</li>
-                <li>Maintenance and Support</li>
-            </ul>
-        </div>
-        <div class="contact-info">
-            <div class="footerBrandName">
-                <img class="footerName-logo" src="assets/images/Brand name img.png" alt="brand name img" width="210"
-                     height="40">
-            </div>
-            <span>
-                <img src="assets/images/Location - Footer.png" alt="location" width="25" height="25">
-                <p><strong>PO BOX</strong></p>
-            </span>
-            <p>30/15, "Leisure Terrace",<br>
-                Cemetery Road, Pinwala,<br>
-                12500 SL</p>
-            <p><strong>chinthanachamod50@gmail.com</strong></p>
-        </div>
-    </div>
-</footer>
-
 
 
 
 <!----------------------------------------------------------------------------------------------->
 
-<!--AOS-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 
 
 
