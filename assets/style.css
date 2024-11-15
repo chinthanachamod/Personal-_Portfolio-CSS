@@ -347,17 +347,17 @@ body {
 
 /*//////////////////////////////////////////// About Section ///////////////////////////////////////////////////////////*/
 
-
+/*
 #about {
     background-color: #2c2c2c;
     padding: 60px 40px;
-    text-align: left; /* Align text to the left */
-    padding-left: 80px; /* Adds 80px spacing from the left */
+    text-align: left; !* Align text to the left *!
+    padding-left: 80px; !* Adds 80px spacing from the left *!
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    /*background-color: red;*/
+    !*background-color: red;*!
 }
 
-/*#about h1 {
+!*#about h1 {
     color: #ff6600;
     font-size: 55px; !* Increases the text size *!
     font-weight: bold; !* Makes the text bold *!
@@ -367,13 +367,13 @@ body {
     font-size: 18px;
     color: #bdbdbd;
     margin-top: 80%; !* Adds space between #about h1 and #abouttxt2 *!
-}*/
+}*!
 
 #about h1 {
     color: #ff6600;
-    font-size: 55px; /* Increases the text size */
-    font-weight: bold; /* Makes the text bold */
-    margin-bottom: 10px; /* Reduces space below the h1 */
+    font-size: 55px; !* Increases the text size *!
+    font-weight: bold; !* Makes the text bold *!
+    margin-bottom: 10px; !* Reduces space below the h1 *!
 }
 
 #abouttxt1 {
@@ -384,7 +384,7 @@ body {
     color: #ffffff;
 }
 
-/*#abouttxt2 {
+!*#abouttxt2 {
     display: flex; !* Aligns the text in columns *!
     justify-content: space-between; !* Ensures both columns are on opposite sides *!
     padding: 20px; !* Adds space inside the border *!
@@ -400,56 +400,56 @@ body {
    !* flex: 1; !* Ensures both columns take equal width *!*!
     width: 30%; !* Set each column to 40% of the container width *!
     padding: 0 10px; !* Adds padding between the columns *!
-}*/
+}*!
 
 #abouttxt2 {
-    display: flex; /* Align content in two columns */
-    justify-content: space-between; /* Space the columns evenly */
-    padding: 10px 15px; /* Adds space inside the border */
-    border: 2px solid #ff6600; /* Adds an orange border around the container */
-    border-radius: 10px; /* Rounds the border edges */
-    margin-top: 40px; /* Adds margin from the top */
-    background-color: #2c2c2c; /* Adds background color */
-    color: #ffffff; /* Sets text color */
-    max-width: 800px; /* Limit the overall width of the container */
-    margin-left: 0; /* Move the container to the left */
-    margin-right: auto; /* Center the container horizontally */
-    background-color: rgba(119, 48, 8, 0.29); /* Add background color*/
-    min-height: 200px; /* Increases the height of the container */
+    display: flex; !* Align content in two columns *!
+    justify-content: space-between; !* Space the columns evenly *!
+    padding: 10px 15px; !* Adds space inside the border *!
+    border: 2px solid #ff6600; !* Adds an orange border around the container *!
+    border-radius: 10px; !* Rounds the border edges *!
+    margin-top: 40px; !* Adds margin from the top *!
+    background-color: #2c2c2c; !* Adds background color *!
+    color: #ffffff; !* Sets text color *!
+    max-width: 800px; !* Limit the overall width of the container *!
+    margin-left: 0; !* Move the container to the left *!
+    margin-right: auto; !* Center the container horizontally *!
+    background-color: rgba(119, 48, 8, 0.29); !* Add background color*!
+    min-height: 200px; !* Increases the height of the container *!
 
 }
 
 
 #abouttxt2 .column1 {
-    flex: 0 0 61%; /* Set column1 to 40% width */
-    padding-right: 10px; /* Adds padding to separate from column2 */
+    flex: 0 0 61%; !* Set column1 to 40% width *!
+    padding-right: 10px; !* Adds padding to separate from column2 *!
 }
 
 #abouttxt2 .column2 {
-    flex: 0 0 55%; /* Set column2 to 55% width */
-    padding-left: 10px; /* Adds padding on the left side of column2 */
+    flex: 0 0 55%; !* Set column2 to 55% width *!
+    padding-left: 10px; !* Adds padding on the left side of column2 *!
 }
 
 #abouttxt2 .column1,
 #abouttxt2 .column2 {
-    line-height: 3.8; /* Increases the space between rows */
+    line-height: 3.8; !* Increases the space between rows *!
 }
 
 
 #aboutImg img {
     width: 360px;
     height: 420px;
-    border-radius: 15%; /* Keeps the image slightly rounded */
+    border-radius: 15%; !* Keeps the image slightly rounded *!
     margin-bottom: 20px;
-    padding: 20px; /* Adds space between the image and the border */
-    border: 6px solid #ff6600; /* Adds an orange border around the image */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for the box effect */
+    padding: 20px; !* Adds space between the image and the border *!
+    border: 6px solid #ff6600; !* Adds an orange border around the image *!
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); !* Adds a subtle shadow for the box effect *!
     margin-left: 70%;
 
 }
 
 #aboutImg {
-    margin-top: -550px; /* Lifts the image up slightly */
+    margin-top: -550px; !* Lifts the image up slightly *!
 }
 
 
@@ -462,22 +462,22 @@ body {
 }
 
 
-/*===================Education & Experience================*/
+!*===================Education & Experience================*!
 
 
-/* Container for the whole section */
+!* Container for the whole section *!
 #education-experience {
-    display: flex; /* Flexbox layout to position the image and text side by side */
-    justify-content: space-between; /* Space between the image and the text */
-    align-items: flex-start; /* Aligns the content to the top */
+    display: flex; !* Flexbox layout to position the image and text side by side *!
+    justify-content: space-between; !* Space between the image and the text *!
+    align-items: flex-start; !* Aligns the content to the top *!
     padding: 40px;
-    background-color: #1a1a1a; /* Dark background for the section */
+    background-color: #1a1a1a; !* Dark background for the section *!
     border-radius: 10px;
     margin-top: 150px;
     margin-left: -41px;
 }
 
-/* Heading for Education & Experience */
+!* Heading for Education & Experience *!
 #education-experience h3 {
     font-size: 49px;
     color: #ff6600;
@@ -487,13 +487,13 @@ body {
 }
 
 
-/* Container for the whole section */
+!* Container for the whole section *!
 .education-experience-container {
-    color: #ffffff; /* White text */
+    color: #ffffff; !* White text *!
     font-family: 'Roboto', sans-serif;
 }
 
-/* Title for Education */
+!* Title for Education *!
 .education-title {
     font-size: 40px;
     color: #ff6600;
@@ -502,18 +502,18 @@ body {
     margin-left: -14vw;
     margin-top: 118px;
 
-    /* Custom underline */
-    border-bottom: 3px solid #ff6600; /* Adds a thick orange underline */
-    padding-bottom: 10px; /* Adds spacing between text and the underline */
-    width: 24vw; /* Increase the width of the underline to 80% of the container */
-    display: block; /* Ensures that width applies correctly */
-    /*margin: 0 auto;*/ /* Centers the underline */
+    !* Custom underline *!
+    border-bottom: 3px solid #ff6600; !* Adds a thick orange underline *!
+    padding-bottom: 10px; !* Adds spacing between text and the underline *!
+    width: 24vw; !* Increase the width of the underline to 80% of the container *!
+    display: block; !* Ensures that width applies correctly *!
+    !*margin: 0 auto;*! !* Centers the underline *!
 }
 
 
-/* List layout for education section */
+!* List layout for education section *!
 .education-container {
-    list-style-type: none; /* Remove default bullet points */
+    list-style-type: none; !* Remove default bullet points *!
     padding: 20px;
     margin-top: -381px;
     border: 2px solid #ff6600;
@@ -524,7 +524,7 @@ body {
     width: 37vw;
 }
 
-/* List items styling */
+!* List items styling *!
 .education-container li {
     color: #ffffff;
     font-size: 18px;
@@ -537,7 +537,7 @@ body {
     font-size: 29px;
 }
 
-/* Image styling */
+!* Image styling *!
 
 .education-experience-container img {
     width: 410px;
@@ -547,14 +547,14 @@ body {
     margin-left: -59vw;
     margin-top: -25px;
 
-    /* Add a border around the image */
-    border: 4px solid #ff6600; /* Orange border */
+    !* Add a border around the image *!
+    border: 4px solid #ff6600; !* Orange border *!
 
-    /* Create space between the image and the border */
-    padding: 10px; /* Adjust padding to control the distance between the image and the border */
+    !* Create space between the image and the border *!
+    padding: 10px; !* Adjust padding to control the distance between the image and the border *!
 
-    /* Optional: add background color to the padding area for better visibility */
-    background-color: #1a1a1a; /* Dark background behind the border */
+    !* Optional: add background color to the padding area for better visibility *!
+    background-color: #1a1a1a; !* Dark background behind the border *!
 
 }
 
@@ -562,22 +562,22 @@ body {
     position: relative;
 }
 
-/* Experience title styling */
+!* Experience title styling *!
 .experience-title {
     font-size: 40px;
     color: #ff6600;
-    /*text-align: center;*/
+    !*text-align: center;*!
     margin-bottom: 30px;
     margin-left: -14vw;
     text-align: left;
     margin-top: 118px;
 
-    /* Custom underline */
-    border-bottom: 3px solid #ff6600; /* Adds a thick orange underline */
-    padding-bottom: 10px; /* Adds spacing between text and the underline */
-    width: 24vw; /* Increase the width of the underline to 80% of the container */
-    display: block; /* Ensures that width applies correctly */
-    /*margin: 0 auto;*/ /* Centers the underline */
+    !* Custom underline *!
+    border-bottom: 3px solid #ff6600; !* Adds a thick orange underline *!
+    padding-bottom: 10px; !* Adds spacing between text and the underline *!
+    width: 24vw; !* Increase the width of the underline to 80% of the container *!
+    display: block; !* Ensures that width applies correctly *!
+    !*margin: 0 auto;*! !* Centers the underline *!
 }
 
 .expImf img {
@@ -588,14 +588,14 @@ body {
     margin-left: -59vw;
     margin-top: -45px;
 
-    /* Add a border around the image */
-    border: 4px solid #ff6600; /* Orange border */
+    !* Add a border around the image *!
+    border: 4px solid #ff6600; !* Orange border *!
 
-    /* Create space between the image and the border */
-    padding: 10px; /* Adjust padding to control the distance between the image and the border */
+    !* Create space between the image and the border *!
+    padding: 10px; !* Adjust padding to control the distance between the image and the border *!
 
-    /* Optional: add background color to the padding area for better visibility */
-    background-color: #1a1a1a; /* Dark background behind the border */
+    !* Optional: add background color to the padding area for better visibility *!
+    background-color: #1a1a1a; !* Dark background behind the border *!
 
 }
 
@@ -607,14 +607,363 @@ body {
 }
 
 .experience-list {
-    padding: 20px; /* Creates space between the content and the border */
-    border: 3px solid #ff6600; /* Adds an orange border around the list */
-    border-radius: 10px; /* Optional: Rounded corners for the border */
-    background-color: #1a1a1a; /* Optional: Dark background inside the border */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for depth */
+    padding: 20px; !* Creates space between the content and the border *!
+    border: 3px solid #ff6600; !* Adds an orange border around the list *!
+    border-radius: 10px; !* Optional: Rounded corners for the border *!
+    background-color: #1a1a1a; !* Optional: Dark background inside the border *!
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); !* Optional: Adds subtle shadow for depth *!
     position: absolute;
     top: 16vh;
     left: -14vw;
+}*/
+
+
+/* Basic Styling */
+#about_me {
+    position: relative;
+    top: -50px;
+    background-color: #2c2c2c;
+    padding: 10rem 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #ff6600;
+}
+
+.about-container_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    max-width: 1900px;
+}
+
+.hero-img {
+    width: 31vw;
+    height: auto;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    /*
+    border: 3px solid orange;
+    */
+    border-radius: 15px;
+}
+
+.info-box_2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#abouttxt1, #abouttxt3 {
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 1.1em;
+}
+
+#abouttxt2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #3b3029;
+    padding: 15px;
+    border: 2px solid #ff6600;
+    border-radius: 8px;
+    max-width: 690px;
+    /* margin: 15px;*/
+    font-size: 1em;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.column1, .column2 {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.About-para {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+#abouttxt3 {
+    text-align: left;
+}
+
+
+@media (max-width: 1024px) {
+    .about-container_2 {
+        gap: 5rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .About-para, #abouttxt3 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #abouttxt2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #about_me {
+        padding: 5rem 5%;
+    }
+
+    .about-container_2 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    #abouttxt1, #abouttxt3 {
+        font-size: 1em;
+    }
+
+    #abouttxt2 {
+        max-width: 100%;
+        font-size: 0.95em;
+        padding: 10px;
+    }
+
+    .hero-img {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .About-para, #abouttxt3 {
+        font-size: 0.9rem;
+    }
+
+    #abouttxt1, #abouttxt3 {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    #abouttxt2 {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .hero-img {
+        width: 80vw;
+    }
+}
+
+
+
+
+
+/*===================Education & Experience================*/
+
+
+/* Main container */
+.Education-And-experience {
+    position: relative;
+    top: -50px;
+    background-color: #1a1a1a;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: white;
+    padding: 5% 10%;
+}
+
+.P1 {
+    font-weight: 500;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding: 5% 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-heading {
+    width: 100%;
+    text-align: center;
+}
+
+.card-heading {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #ff6600;
+}
+
+.card {
+    border: 2px solid #ff6600;
+    width: 68%;
+    margin: 1%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1%;
+}
+
+.card-img {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.card-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-heading, .card-subtitle, .card-description {
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .card-heading {
+        font-size: 2rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-heading {
+        font-size: 1.8rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .card {
+        width: 90%; /* Adjust card width for tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .card-heading {
+        font-size: 1.6rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        width: 100%; /* Full width for small screens */
+        margin: 1% 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .Education-And-experience {
+        padding: 20px 5%;
+    }
+
+    .card-heading {
+        font-size: 1.5rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .Education-And-experience {
+        padding: 10px;
+    }
+
+    .card-container {
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .card-heading {
+        font-size: 1.3rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .Education-And-experience {
+        padding: 5px;
+    }
+    .card-container{
+        padding: 0;
+    }
+
+    .card-heading {
+        font-size: 1.2rem;
+    }
+
+
+    .card-subtitle {
+        font-size: 0.7rem;
+    }
+
+    .card {
+        padding: 2%;
+        width: 18%;
+    }
 }
 
 /*////////////////////// Skills ////////////////////////*/
