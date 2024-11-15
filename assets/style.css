@@ -1867,6 +1867,117 @@ button.submitBtn:focus {
 }
 
 /* Responsive Design */
+
+@media (max-width: 1440px) {
+
+    .nav-items li a {
+        padding: 3px;
+        margin-left: 10px;
+    }
+
+    
+    .footer-content p:last-child {
+        white-space: nowrap;
+        color: #e65c00;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        display: block;
+    }
+
+    .quote p {
+        font-size: 15px;
+        color: #ffffff;
+        font-style: italic;
+        margin-bottom: 15px;
+        width: 202%;
+        padding: 20px;
+    }
+
+    .footer-content .links {
+        position: relative;
+        left: 23vw;
+    }
+
+    .quote h2 {
+        width: 20vw;
+        margin-left: 1vw;
+    }
+
+    .services {
+        position: relative;
+        left: -5vw;
+    }
+
+    .footer-content p:last-child {
+        margin-left: -85px;
+    }
+
+    .contact-info strong {
+        margin-left: 86px;
+    }
+
+    .footerVerticalLine {
+        position: relative;
+        left: -19vw;
+    }
+
+    .contact-info {
+        position: relative;
+        left: -5vw;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .footerVerticalLine {
+        position: relative;
+        left: -44vw;
+        height: 36vh;
+    }
+
+    .footer-content .links {
+        position: relative;
+        left: 4vw;
+    }
+
+    .quote p {
+        width: 20vw;
+        text-align: left;
+    }
+
+    .quote h2 {
+        width: 38vw;
+        margin-left: 1vw;
+    }
+
+    .services {
+        position: relative;
+        left: -31vw;
+    }
+
+    .contact-info {
+        position: relative;
+        left: 66vw;
+        top: -71vh;
+    }
+
+    .contact-info strong {
+        position: relative;
+        left: -75px;
+    }
+
+    .footer-content p:last-child {
+        white-space: nowrap; /* Prevents text from wrapping */
+        color: #e65c00; /* Sets text color to #e65c00 */
+        font-family: Arial, sans-serif; /* Example font family */
+        text-align: center; /* Centers the text */
+        display: block;
+        margin-left: -8px;
+    }
+}
+
+
+/*
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -1875,4 +1986,23 @@ button.submitBtn:focus {
     .footer-content > div {
         margin: 10px 0;
     }
-}
+
+    .footer-content .quote .p1 {
+        font-size: 22px;
+        line-height: 1.8;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 400;
+        font-family: Arial, sans-serif;
+        font-style: italic;
+        position: relative;
+        top: -6vh;
+        left: 64px;
+    }
+
+    .footer-content .links {
+        position: relative;
+        left: 0;
+    }
+
+}*/
