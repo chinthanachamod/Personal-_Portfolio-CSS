@@ -14,10 +14,11 @@ body {
     color: #e0e0e0;
     font-size: 16px;
     line-height: 1.8;
-    background: black;
+
 }
 
-/* NavBar */
+/*
+!* NavBar *!
 
 .nav {
     background-color: #333;
@@ -47,6 +48,71 @@ body {
     display: flex;
     gap: 30px;
 }
+*/
+
+/* NavBar */
+
+/*========================= start ===================================*/ /*   satrt eke idan end ek wenkn thina ewa copy krl dnn*/
+.nav {
+    background-color: #333;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.name-logo {
+    width: 210px;
+    height: auto;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items.show-menu {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 1025px) and (min-width: 768px) {
+    #service h2 {
+        font-size: 50px;
+        color: #ff6600;
+        text-align: center;
+        margin-bottom: 40px;
+        position: absolute;
+        top: 24vh !important;
+        left: 5vw;
+    }
+
+}
+/*============================= end ========================================*/
 
 .nav-items li a {
     color: #e0e0e0;
@@ -832,6 +898,7 @@ body {
 
 
 .Skills {
+    height: 170%;
     background-color: #1e1e1e;
     color: #fff;
     margin: 0;
@@ -839,7 +906,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
     position: relative;
     top: -50px;
 }
@@ -1177,7 +1243,7 @@ h3 {
 }
 @media all and (max-width: 1200px) {
     .Projects {
-        margin-top: -100px;
+        margin-top: -20px;
     }
 }
 @media all and (max-width: 768px) {
@@ -1588,6 +1654,42 @@ h3 {
     background-color: #e65c00;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transform: translateY(-5px);
+}
+
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .myworkImg img {
+        border-radius: 57px;
+        width: 350px;
+        height: 350px;
+        border: 5px solid #ff6600;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        position: relative;
+        left: -22vw !important;
+        top: 63px !important;
+    }
+
+    .myWork h3 {
+        font-size: 45px;
+        color: #ffffff;
+        margin-right: 20px;
+        text-transform: uppercase;
+        position: relative;
+        top: -30vh !important;
+        left: 7vw !important;
+        max-width: 300px;
+        text-align: center;
+        word-wrap: break-word;
+        width: max-content;
+    }
+
+    .myworkContent p {
+        width: 30vw !important;
+        position: relative !important;
+        top: -10vh !important;
+        left: -16vw !important;
+    }
 }
 
 /*------------------------------------------- Gallery ----------------------------------------------*/
@@ -2210,7 +2312,7 @@ button.submitBtn:focus {
         margin-left: 10px;
     }
 
-    
+
     .footer-content p:last-child {
         white-space: nowrap;
         color: #e65c00;
